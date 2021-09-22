@@ -1,4 +1,5 @@
 import {} from "react-icons/fa";
+import axios from "axios";
 
 export default function Home(props) {
   return (
@@ -128,4 +129,14 @@ export default function Home(props) {
     //   </footer>
     // </div>
   );
+}
+
+export async function getServerSideProps(context) {
+  const response = await axios.get("http://localhost:3000/api/posts");
+
+  return {
+    props: {
+      posts_data: response.data,
+    }, // will be passed to the page component as props
+  };
 }
