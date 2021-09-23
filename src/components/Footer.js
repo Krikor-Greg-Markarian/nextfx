@@ -21,7 +21,7 @@ function Footer() {
             <div className = {cn("text-center")}>
             <p className = {cn("font-bold text-white text-2xl pt-4")}>Stay connected with the right NetFx internet service</p>
             <p className = {cn("text-sm text-white pt-2 pb-2 text-center")}>Get a price you'll love and the reliability you deserve</p>
-            <button className = {cn("bg-white text-blue-700 p-1 rounded")}>Let's get started</button>
+            <button className = {cn("bg-white text-blue-700 p-2 rounded")}>Let's get started</button>
             </div>
           </div>
         </div>
