@@ -12,9 +12,22 @@ const Card = (props) => {
   };
 
   return (
-    <div className={cn("p-3 rounded-lg", styles.mainContainer, props.className)}
-    >{renderMostPopular()}{props.children}
+    <div className={cn("p-3 rounded-lg", styles.mainContainer, props.className)}>{renderMostPopular()}{props.children}
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
+
+    
   );
 };
 

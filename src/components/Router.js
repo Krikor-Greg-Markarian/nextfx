@@ -1,5 +1,9 @@
 import React from 'react'
 import cn from 'classnames'
+// import { CircularProgressbar } from 'react-circular-progressbar';
+// import 'react-circular-progressbar/dist/styles.css';
+
+const percentage = 66;
 
 function Router() {
     return (

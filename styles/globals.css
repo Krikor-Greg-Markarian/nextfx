@@ -2,3 +2,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wall {
+  background-image: url("https://cdn.pixabay.com/photo/2021/08/20/14/53/monastery-6560623__340.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 480px;
+}
+
+.road {
+  background-image: url("https://cdn.pixabay.com/photo/2021/08/26/18/31/road-6576857__340.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  height: 280px;
+}
+
+.instrument {
+  background-image: url("https://cdn.pixabay.com/photo/2021/09/14/18/25/tenor-saxophone-6624725__340.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35%;
+  height: 180px;
+}
+
+.fire {
+  background-image: url("https://cdn.pixabay.com/photo/2016/09/29/13/08/planet-1702788__340.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 180px;
+}
+
+
+.technologyoffer {
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537__340.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+}
+
+.free {
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/03/15/42/button-1711966__340.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+}
+
+.earth {
+  background-image: url("https://cdn.pixabay.com/photo/2016/08/24/14/29/earth-1617121__340.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 290px;
+  height: 160px;
+}
+
+body{
+  background-color: #F8F8F8;
+}
