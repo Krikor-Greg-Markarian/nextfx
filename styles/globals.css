@@ -67,6 +67,27 @@
   height: 160px;
 }
 
+.camera {
+  background-image: url("https://cdn.pixabay.com/photo/2016/01/09/18/27/camera-1130731__340.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 280px;
+}
+
+.small {
+  background-image: url("https://cdn.pixabay.com/photo/2017/07/22/11/46/adventure-2528477__340.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
 body{
   background-color: #F8F8F8;
 }

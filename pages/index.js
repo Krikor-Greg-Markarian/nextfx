@@ -13,6 +13,10 @@ import RightPlan from "../src/components/RightPlan";
 import FiberConnection from "../src/components/FiberConnection";
 import AddressBar from "../src/components/AddressBar";
 import FastestSpeed from "../src/components/FastestSpeed";
+import InternetProvider from "../src/components/InternetProvider";
+import Unlimited from "../src/components/Unlimited";
+import SmallBoxes from "../src/components/SmallBoxes";
+import TextImg from "../src/components/TextImg";
 // import { CircularProgressbar } from 'react-circular-progressbar';
 
 
@@ -73,6 +77,22 @@ export default function Home(props) {
 
       <section>
         <FastestSpeed />
+      </section>
+
+      <section>
+        <InternetProvider />
+      </section>
+
+      <section>
+        <Unlimited  />
+      </section>
+
+      <section>
+        <SmallBoxes />
+      </section>
+
+      <section>
+        <TextImg />
       </section>
 
       <section>
