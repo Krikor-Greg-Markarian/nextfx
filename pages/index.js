@@ -217,6 +217,9 @@ export default function Home(props) {
 
       <section className={cn("pt-40 ")}>
         <div className={cn("container mx-auto ")}>
+          <p className = {cn("text-sm text-blue-700 text-center")}>Phone and devices</p>
+          <p className = {cn("font-bold text-2xl text-blue-700 text-center")}>Buy trending products</p>
+          <p className = {cn("text-sm text-gray-500 text-center")}>order online today! Get FREE express shipping &amp; FREE returs</p>
           <Swiper />
         </div>
       </section>
