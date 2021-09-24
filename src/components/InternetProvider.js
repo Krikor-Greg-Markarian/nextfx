@@ -5,7 +5,7 @@ function InternetProvider() {
   return (
     <div>
       <div className={cn("camera")}>
-        <div className={cn("container mx-auto")}>
+        <div className={cn("container mx-auto pt-4")}>
           <div className={cn("grid grid-cols-2")}>
             <div className={cn("col-span-1")}>
                
