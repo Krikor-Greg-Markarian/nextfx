@@ -3,7 +3,7 @@ import cn from "classnames";
 
 function ClientReview(props) {
   return (
-    <div>
+    <div className = {cn("py-28")}>
       <p className={cn("text-sm text-blue-700")}>Testimonials</p>
       <p className={cn("font-bold text-lg")}>Our client love us!</p>
       <p className={cn("text-sm text-gray-500")}>
