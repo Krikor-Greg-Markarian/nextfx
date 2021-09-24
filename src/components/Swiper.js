@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import Card from "./Card";
+import cn from "classnames";
 
 export default () => {
   return (
@@ -19,6 +19,7 @@ export default () => {
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={20}
       slidesPerView={4}
+      className = {cn("p-3")}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
