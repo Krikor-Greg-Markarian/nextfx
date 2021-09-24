@@ -18,10 +18,16 @@ function Footer() {
           className={cn("container mx-auto absolute left-0 right-0 -top-24")}
         >
           <div className={cn("fire rounded")}>
-            <div className = {cn("text-center")}>
-            <p className = {cn("font-bold text-white text-2xl pt-4")}>Stay connected with the right NetFx internet service</p>
-            <p className = {cn("text-sm text-white pt-2 pb-2 text-center")}>Get a price you'll love and the reliability you deserve</p>
-            <button className = {cn("bg-white text-blue-700 p-2 rounded")}>Let's get started</button>
+            <div className={cn("text-center")}>
+              <p className={cn("font-bold text-white text-2xl pt-4")}>
+                Stay connected with the right NetFx internet service
+              </p>
+              <p className={cn("text-sm text-white pt-2 pb-2 text-center")}>
+                Get a price you'll love and the reliability you deserve
+              </p>
+              <button className={cn("bg-white text-blue-700 p-2 rounded")}>
+                Let's get started
+              </button>
             </div>
           </div>
         </div>
@@ -94,7 +100,7 @@ function Footer() {
               </div>
             </div>
             <div>
-              <div className={cn("pt-8 pb-8 ")}>
+              <div className={cn("pt-1 pb-1")}>
                 <p
                   className={cn(
                     "border-t-2 border-gray-300 pt-8 text-sm text-gray-500 "

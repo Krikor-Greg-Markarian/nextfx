@@ -85,6 +85,16 @@
   height: 50px;
 }
 
+.new {
+  background-image: url("https://cdn.pixabay.com/photo/2020/03/02/16/19/vintage-4896141__340.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 15local0px;
+}
+
+
 
 
 

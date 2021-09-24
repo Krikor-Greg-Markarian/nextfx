@@ -32,7 +32,9 @@ export default function Home(props) {
 
       <section>
         <div className={"p-11"}>
-          <Card className={cn("border-t-4 border-blue-300")}>hi</Card>
+          <Card className={cn("border-t-4 border-blue-300")}>
+            
+             </Card>
         </div>
       </section>
 
