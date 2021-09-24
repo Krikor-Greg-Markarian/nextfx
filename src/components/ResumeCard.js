@@ -13,22 +13,18 @@ const Card = (props) => {
 
   return (
     <div
-      className={cn(
-        "p-3 rounded-lg w-96 p",
-        styles.mainContainer,
-        props.className
-      )}
+      className={cn("p-3 rounded-lg", styles.mainContainer, props.className)}
     >
       {renderMostPopular()}
       {props.children}
       <p className={cn("font-bold pb-4")}>Submit your resume</p>
-      <div className={cn("inline")}>
+      <div className={cn("inline ")}>
         <input
           type="text"
           name=""
           id=""
           placeholder="First Name"
-          className={cn(" border-2 ")}
+          className={cn(" border-2 p-1")}
         />
       </div>
       <div className={cn("inline pl-1")}>
@@ -37,7 +33,7 @@ const Card = (props) => {
           name=""
           id=""
           placeholder="Last Name"
-          className={cn(" border-2 ")}
+          className={cn(" border-2 p-1")}
         />
       </div>
       <div className={cn("pt-2")}>
@@ -46,7 +42,7 @@ const Card = (props) => {
           name=""
           id=""
           placeholder="Job You're Applying For:"
-          className={cn("w-full border-2  ")}
+          className={cn("w-full border-2  p-1")}
         />
         <div className={cn("pt-2")}>
           <input
@@ -54,7 +50,7 @@ const Card = (props) => {
             name=""
             id=""
             placeholder="Phone number"
-            className={cn("w-full border-2  ")}
+            className={cn("w-full border-2 p-1 ")}
           />
         </div>
         <div className={cn("pt-2")}>
@@ -63,10 +59,10 @@ const Card = (props) => {
             name=""
             id=""
             placeholder="Business email"
-            className={cn("w-full border-2")}
+            className={cn("w-full border-2 p-1")}
           />
         </div>
-        <p className={cn("text-sm pt-2")}>Resume Upload</p>
+     
         <div className={cn("pt-2 inline")}>
           <button
             className={cn(
