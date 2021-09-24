@@ -18,7 +18,10 @@ const CardResume = (props) => {
       {renderMostPopular()}
       {props.children}
       <p className={cn("font-bold pb-4")}>Request a call back</p>
-      <p className = {cn("text-sm text-gray-500")}>Were are commited to providing excellent service and creating a stress-free experience for our customers.</p>
+      <p className={cn("text-sm text-gray-500")}>
+        Were are commited to providing excellent service and creating a
+        stress-free experience for our customers.
+      </p>
       <div className={cn("inline ")}>
         <input
           type="text"
@@ -63,16 +66,17 @@ const CardResume = (props) => {
             className={cn("w-full border-2 p-1")}
           />
         </div>
-       <p className = {cn("text-sm pt-3")}>How do you prefer to be contracted? (Optional)</p>
-       <div className = {cn("inline")}> 
-       <input type="radio" name="" id="" />
-       <label htmlFor=""> Email</label>
-       </div>
-       <div className = {cn("pl-20 inline")}>
-       <input type="radio" name="" id="" />
-       <label htmlFor=""> Phone</label>
-       </div>
-        
+        <p className={cn("text-sm pt-3")}>
+          How do you prefer to be contracted? (Optional)
+        </p>
+        <div className={cn("inline")}>
+          <input type="radio" name="" id="" />
+          <label htmlFor="" className = {cn("pl-3")}> Email</label>
+        </div>
+        <div className={cn("pl-20 inline")}>
+          <input type="radio" name="" id="" />
+          <label htmlFor="" className = {cn("pl-3")}> Phone</label>
+        </div>
       </div>
       <div className={cn("pt-4 pb-2")}>
         <button className={cn("bg-blue-800 text-white text-sm p-2 w-full")}>
