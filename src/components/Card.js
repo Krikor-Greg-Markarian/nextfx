@@ -18,7 +18,7 @@ const Card = (props) => {
   return (
     <div
       className={cn(
-        "p-4 rounded-lg w-3/12",
+        "p-4 rounded-lg",
         styles.mainContainer,
         props.className
       )}
