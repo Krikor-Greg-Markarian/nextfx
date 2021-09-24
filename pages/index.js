@@ -20,9 +20,9 @@ import TextImg from "../src/components/TextImg";
 import Swiper from "../src/components/Swiper";
 import { FaCheck } from "react-icons/fa";
 import RecCard from "../src/components/RecCard";
-import { Button } from "bootstrap";
-
-
+import ClientReview from "../src/components/ClientReview";
+import ResumeCardRadio from "../src/components/ResumeCardRadio";
+import CardSwipe from "../src/components/CardSwipe";
 
 // import { CircularProgressbar } from 'react-circular-progressbar';
 
@@ -130,13 +130,99 @@ export default function Home(props) {
               </div>
             </div>
             <div>
-              <div className = {cn("flex justify-center items-center pt-8")}>
-             <button className = {cn("bg-blue-400 text-sm p-2")}>More About services</button>
-             </div>
+              <div className={cn("flex justify-center items-center pt-8")}>
+                <button className={cn("bg-blue-400 text-sm p-2")}>
+                  More About services
+                </button>
+              </div>
             </div>
           </div>
-          
         </div>
+      </section>
+
+      <section>
+        <div className={cn("bg-white")}>
+          <div className={cn("container mx-auto")}>
+            <div className={cn("grid grid-cols-3")}>
+              <div className={cn("col-span-1")}>
+                <p>why choose up</p>
+                <p>
+                  all your favorite tvv for a better value and no hiddenfees.
+                </p>
+              </div>
+            </div>
+            <div className={cn("grid grid-cols-2 gap-2")}>
+              <div className={cn("col-span-1")}>
+                <TextImg />
+              </div>
+              <div className={cn("col-span-1")}>
+                <TextImg />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <AddressBar />
+      </section>
+
+      <section>
+        <div className={cn("bg-gray-100")}>
+          <div className={cn("container mx-auto")}>
+            <p className={cn("text-sm text-blue-700 text-center")}>
+              Network Packages
+            </p>
+            <p className={cn("font-bold text-center text-2xl")}>
+              Our Best Value Bundles
+            </p>
+            <p className={cn("text-sm text-gray-500 text-center")}>
+              get the best deals on TV, internet &amp; Home phones for New York
+              City, NY
+            </p>
+            <div className={cn(" md:grid grid-cols-4 gap-2")}>
+              <div className={cn("sm:pb-2 col-span-1")}>
+                <Card />
+              </div>
+              <div className={cn("sm:pb-2 col-span-1")}>
+                <Card />
+              </div>
+              <div className={cn("sm:pb-2 col-span-1")}>
+                <Card />
+              </div>
+              <div className={cn("sm:pb-2 col-span-1")}>
+                <Card />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className={cn("bg-gray-200")}>
+          <div className={cn("container mx-auto")}>
+            <div className={cn("md:grid grid-cols-2")}>
+              <div className={cn("col-span-1")}>
+                <ClientReview />
+              </div>
+              <div className={cn("col-span-1 relative")}>
+                <div className={cn("absolute right-0 top-10")}>
+                  <ResumeCardRadio />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={cn("pt-40 ")}>
+        <div className={cn("container mx-auto ")}>
+          <Swiper />
+        </div>
+      </section>
+
+      <section>
+        <Footer />
       </section>
     </div>
   );
