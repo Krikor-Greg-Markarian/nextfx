@@ -39,11 +39,12 @@ function AddressBar() {
                 />
               </div>
               <div className="flex-grow pl-1">
-                <div className = {cn("flex justify-center ritems-center")}>
-                <button className = {cn("bg-blue-600 text-sm px-18")}>Check Availability</button>
+                <div className={cn("flex justify-center ritems-center")}>
+                  <button className={cn("bg-blue-600 text-sm px-18")}>
+                    Check Availability
+                  </button>
                 </div>
               </div>
-             
             </div>
           </div>
         </div>
