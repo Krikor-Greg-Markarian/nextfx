@@ -16,9 +16,7 @@ const CardSwipe = (props) => {
   };
 
   return (
-    <div
-      className={cn("rounded-lg", styles.mainContainer, props.className)}
-    >
+    <div className={cn("rounded-lg", styles.mainContainer, props.className)}>
       {renderMostPopular()}
       {props.children}
       <div>
