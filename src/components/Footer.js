@@ -49,8 +49,8 @@ function Footer() {
               </div>
               <div className={cn("col-span-2 pl-20")}>
                 <p className={cn("font-bold text-blue-800")}>Contacts</p>
-                <div class="flex pt-4">
-                  <div class="flex-shrink ">
+                <div classname="flex pt-4">
+                  <div classname="flex-shrink ">
                     <FaLocationArrow className={cn("inline text-blue-800")} />
                     <p className={cn("text-sm inline text-gray-500")}>
                       {" "}
@@ -58,8 +58,8 @@ function Footer() {
                     </p>
                   </div>
                 </div>
-                <div class="flex pt-4">
-                  <div class="flex-shrink ">
+                <div classname="flex pt-4">
+                  <div classname="flex-shrink ">
                     <FaPhone className={cn("inline text-blue-800")} />
                     <p className={cn("text-sm inline text-gray-500")}>
                       {" "}
@@ -67,8 +67,8 @@ function Footer() {
                     </p>
                   </div>
                 </div>
-                <div class="flex pt-4">
-                  <div class="flex-shrink ">
+                <div classname="flex pt-4">
+                  <div classname="flex-shrink ">
                     <FaMailBulk className={cn("inline text-blue-800")} />
                     <p className={cn("text-sm inline text-gray-500")}>
                       {" "}
@@ -80,7 +80,7 @@ function Footer() {
 
               <div className={cn("pl-8")}>
                 <p className={cn("font-bold text-blue-800")}>Navigation</p>
-                <p className={cn("text-gray-500 text-sm pt-4")}>Home</p>
+                <p className={cn("text-gray-500 text-sm pt-2")}>Home</p>
                 <p className={cn("text-gray-500 text-sm pt-2")}>Services</p>
                 <p className={cn("text-gray-500 text-sm pt-2")}>About us</p>
                 <p className={cn("text-gray-500 text-sm pt-2")}>Testimonials</p>
