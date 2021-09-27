@@ -133,7 +133,7 @@ export default function Home(props) {
           <div className={cn("stars")}>
             <div className={cn("container mx-auto ")}>
               <div className={"grid grid-cols-2"}>
-                <div className={cn("col-span-1 w-12/12 pl-16 py-3")}>
+                <div className={cn("col-span-1 w-12/12 pl-16 py-8")}>
                   <p className={cn("font-bold text-blue-900 text-2xl")}>
                     Extend your super-fast internet to reach every corner of
                     your home.
