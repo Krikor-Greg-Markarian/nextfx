@@ -17,7 +17,11 @@ const Card = (props) => {
 
   return (
     <div
-      className={cn("p-4 rounded-lg", styles.mainContainer, props.className)}
+      className={cn(
+        "p-4 rounded-lg border-t-4 border-blue-300",
+        styles.mainContainer,
+        props.className
+      )}
     >
       {renderMostPopular()}
       {props.children}
