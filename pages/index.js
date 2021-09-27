@@ -234,7 +234,7 @@ export default function Home(props) {
           <p className={cn("text-sm text-blue-700 text-center mb-0")}>
             Phone and devices
           </p>
-          <p className={cn("font-bold text-2xl text-blue-700 text-center")}>
+          <p className={cn("font-bold text-2xl text-blue-900 text-center")}>
             Buy trending products
           </p>
           <p className={cn("text-sm text-gray-500 text-center pb-4")}>
