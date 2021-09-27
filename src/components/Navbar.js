@@ -10,6 +10,7 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import cn from "classnames";
+import Link from 'next/link'
 
 function Navbar() {
   return (
@@ -29,13 +30,6 @@ function Navbar() {
       </div>
       <div className={cn("container mx-auto")}>
         <div>
-          {/* <div className = {cn("text-2xl bg-white p-6")}>
-                NetFx
-                <div>
-                    asdsd
-                </div>
-            </div> */}
-
           <div className={cn("bg-blue-100")}>
             <p className={cn("text-sm inline")}>Residential Services</p>
             <p className={cn("text-sm inline text-gray-400 pl-4")}>
@@ -46,13 +40,13 @@ function Navbar() {
           </div>
           <div className={cn("py-8 bg-white")}>
             <li className={cn("inline")}>
-              <a href="#">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li className={cn("inline ml-3")}>
-              <a href="#">Packages</a>
+              <Link href="/packages">Packages</Link>
             </li>
             <li className={cn("inline ml-3")}>
-              <a href="#">Services</a>
+              <Link href="/Services">Services</Link>
             </li>
             <li className={cn("inline ml-3")}>
               <a href="#">Features</a>
