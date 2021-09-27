@@ -80,30 +80,66 @@ function Footer() {
 
               <div className={cn("pl-8")}>
                 <p className={cn("font-bold text-blue-800")}>Navigation</p>
-                <p className={cn("text-gray-500 text-sm pt-2")}>Home</p>
-                <p className={cn("text-gray-500 text-sm pt-2")}>Services</p>
-                <p className={cn("text-gray-500 text-sm pt-2")}>About us</p>
-                <p className={cn("text-gray-500 text-sm pt-2")}>Testimonials</p>
-                <p className={cn("text-gray-500 text-sm pt-2")}>Blogs</p>
+                <li className={cn("text-sm list-none")}>
+                  <a className={cn("no-underline text-gray-500")} href="#">
+                    Home
+                  </a>
+                </li>
+                <li className={cn("text-sm pt-2 list-none")}>
+                  <a className={cn("no-underline text-gray-500")} href="#">
+                    Services
+                  </a>
+                </li>
+                <li className={cn("text-sm pt-2 list-none")}>
+                  <a className={cn("no-underline text-gray-500")} href="#">
+                    About us
+                  </a>
+                </li>
+                <li className={cn("text-sm pt-2 list-none")}>
+                  <a className={cn("no-underline text-gray-500")} href="#">
+                    Testimonials
+                  </a>
+                </li>
+                <li className={cn("text-sm pt-2 list-none")}>
+                  <a className={cn("no-underline text-gray-500")} href="#">
+                    Blogs
+                  </a>
+                </li>
               </div>
               <div className={cn("pl-7")}>
                 <p className={cn("font-bold text-blue-800")}>Quick links</p>
-                <p className={cn("text-gray-500 text-sm pt-4")}>Packages</p>
-                <p className={cn("text-gray-500 text-sm pt-2")}>Connection</p>
-                <p className={cn("text-gray-500 text-sm pt-2")}>Service Plus</p>
-                <p className={cn("text-gray-500 text-sm pt-2")}>
-                  Privacy Policy
-                </p>
-                <p className={cn("text-gray-500 text-sm pt-2")}>
-                  Coverage Maps
-                </p>
+                <li className={cn("text-sm list-none")}>
+                  <a className={cn("no-underline text-gray-500")} href="#">
+                    Packages
+                  </a>
+                </li>
+                <li className={cn("text-sm pt-2 list-none")}>
+                  <a className={cn("no-underline text-gray-500")} href="#">
+                    Connection
+                  </a>
+                </li>
+                <li className={cn("text-sm pt-2 list-none")}>
+                  <a className={cn("no-underline text-gray-500")} href="#">
+                    Service Plus
+                  </a>
+                </li>
+                <li className={cn("text-sm pt-2 list-none")}>
+                  <a className={cn("no-underline text-gray-500")} href="#">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li className={cn("text-sm pt-2 list-none")}>
+                  <a className={cn("no-underline text-gray-500")} href="#">
+                    Coverage Maps
+                  </a>
+                </li>
               </div>
             </div>
             <div>
-              <div className={cn("pt-1 pb-1")}>
+              <div className={cn("pt-4 pb-1")}>
                 <p
                   className={cn(
-                    "border-t-2 border-gray-300 pt-8 text-sm text-gray-500 "
+                    "border-t-2 border-gray-300 pt-3 text-sm text-gray-500 "
                   )}
                 >
                   NetFx <span className={cn("pl-4")}>|</span>{" "}
