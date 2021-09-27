@@ -4,7 +4,7 @@ import cn from "classnames";
 function IntSelection(props) {
   return (
     <div>
-      <div className={cn("w-3/12")}>
+      <div className={cn("")}>
         <div>
           <p
             className={cn(" text-sm text-blue-800 font-bold bg-gray-200 p-3 ")}
