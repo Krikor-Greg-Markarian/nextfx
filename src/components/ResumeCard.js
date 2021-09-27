@@ -62,7 +62,7 @@ const Card = (props) => {
             className={cn("w-full border-2 p-1")}
           />
         </div>
-     
+
         <div className={cn("pt-2 inline")}>
           <button
             className={cn(

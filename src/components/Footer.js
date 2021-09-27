@@ -117,13 +117,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
-      {/* <div>
-                      <div className = {cn("fire container mx-auto relative")}></div>
-                      <div className = {cn("bg-gray-200 absolute -top-2")}>
-                        asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                      </div>
-                    </div> */}
     </div>
   );
 }

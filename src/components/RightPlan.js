@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa";
 
 function RightPlan() {
   return (
-    <div className={cn("bg-blue-100 w-3/12 rounded")}>
+    <div className={cn("bg-blue-100 rounded")}>
       <div className={cn("p-4")}>
         <p className={cn("text-sm font-bold")}>Personal</p>
         <p className={cn("font-bold text-lg mb-0")}>Good Value</p>

@@ -19,7 +19,7 @@ export default () => {
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={20}
       slidesPerView={4}
-      className = {cn("p-3")}
+      className={cn("p-3")}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}

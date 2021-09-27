@@ -4,7 +4,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 function QuestionAnswer() {
   return (
-    <div className = {cn("")}>
+    <div className={cn("")}>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Why NetFx home internet service?</Accordion.Header>
@@ -15,7 +15,9 @@ function QuestionAnswer() {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>Which NetFx internet plan is the fastest ?</Accordion.Header>
+          <Accordion.Header>
+            Which NetFx internet plan is the fastest ?
+          </Accordion.Header>
           <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -39,7 +41,9 @@ function QuestionAnswer() {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="3">
-          <Accordion.Header>What channels do you get with NetFx+TV packages ?</Accordion.Header>
+          <Accordion.Header>
+            What channels do you get with NetFx+TV packages ?
+          </Accordion.Header>
           <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

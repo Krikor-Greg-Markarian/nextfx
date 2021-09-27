@@ -22,13 +22,13 @@ function FiberConnection() {
               </div>
             </div>
             <div className="col-span-1">
-                <div className ={cn("flex justify-center pt-3")}>
-             <div className = {cn("technologyoffer relative rounded")}>
-                 <div className = {cn("flex justify-center items-center")}>
-                 <div className = {cn("free absolute -left-7 top-8")}></div>
-                 </div>
-             </div>
-             </div>
+              <div className={cn("flex justify-center pt-3")}>
+                <div className={cn("technologyoffer relative rounded")}>
+                  <div className={cn("flex justify-center items-center")}>
+                    <div className={cn("free absolute -left-7 top-8")}></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
