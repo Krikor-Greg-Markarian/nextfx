@@ -10,7 +10,7 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import cn from "classnames";
-import Link from 'next/link'
+import Link from "next/link";
 
 function Navbar() {
   return (
@@ -46,10 +46,10 @@ function Navbar() {
               <Link href="/packages">Packages</Link>
             </li>
             <li className={cn("inline ml-3")}>
-              <Link href="/Services">Services</Link>
+              <Link href="/services">Services</Link>
             </li>
             <li className={cn("inline ml-3")}>
-              <a href="#">Features</a>
+              <Link href="/features">Features</Link>
             </li>
             <li className={cn("inline ml-3")}>
               <a href="#">News</a>
