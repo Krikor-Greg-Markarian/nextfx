@@ -55,9 +55,11 @@ export default function Home(props) {
           <div className={cn("col-span-1")}>
             <div className={cn("couch w-full")}></div>
           </div>
-          <div className={cn("col-span-1 p-11")}>
+          <div className={cn("col-span-1 p-8")}>
             <div className={cn("container mx-auto")}>
-              <p className={cn("text-blue-800 text-sm")}>Unlimited possible</p>
+              <p className={cn("text-blue-800 text-sm mb-0")}>
+                Unlimited possible
+              </p>
               <p className={cn("font-bold text-2xl text-blue-800")}>
                 The best TV experience powered by NetFx internet
               </p>
@@ -67,20 +69,20 @@ export default function Home(props) {
               </p>
               <div>
                 <FaCheck className={cn("inline")} />
-                <p className={cn("text-gray-500 text-sm inline")}>
+                <p className={cn("text-gray-500 text-sm inline pl-4")}>
                   The speed you need at a price you'll love-with plans up to
                   100Mbps*
                 </p>
               </div>
               <div className={cn("pt-3")}>
                 <FaCheck className={cn("inline")} />
-                <p className={cn("text-gray-500 text-sm inline")}>
+                <p className={cn("text-gray-500 text-sm inline pl-4")}>
                   The bandwidth to power multiple devices at once
                 </p>
               </div>
               <div className={cn("pt-3")}>
                 <FaCheck className={cn("inline")} />
-                <p className={cn("text-gray-500 text-sm inline")}>
+                <p className={cn("text-gray-500 text-sm inline pl-4")}>
                   Seamless streaming,working, and gaming
                 </p>
               </div>
@@ -92,7 +94,7 @@ export default function Home(props) {
       <section>
         <div className={cn("bg-gray-200 py-12")}>
           <div className={cn("container mx-auto")}>
-            <p className={cn("text-sm text-blue-800")}>What We Do?</p>
+            <p className={cn("text-sm text-blue-800 mb-0")}>What We Do?</p>
             <div className={cn("grid grid-cols-2")}>
               <div className={cn("col-span-1")}>
                 <p className={cn("text-2xl font-bold")}>
@@ -107,7 +109,7 @@ export default function Home(props) {
                 </p>
               </div>
             </div>
-            <div className={cn("md:grid grid-cols-4 gap-4")}>
+            <div className={cn("md:grid grid-cols-4 gap-4 pt-2")}>
               <div className={cn("col-span-1")}>
                 <RecCard>
                   <Unlimited />
@@ -131,7 +133,7 @@ export default function Home(props) {
             </div>
             <div>
               <div className={cn("flex justify-center items-center pt-8")}>
-                <button className={cn("bg-blue-400 text-sm p-2")}>
+                <button className={cn("bg-blue-400 text-sm p-2 font-bold")}>
                   More About services
                 </button>
               </div>
@@ -140,23 +142,31 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section>
+      <section className={cn("w-10/12 p-12")}>
         <div className={cn("bg-white")}>
           <div className={cn("container mx-auto")}>
             <div className={cn("grid grid-cols-3")}>
-              <div className={cn("col-span-1")}>
-                <p>why choose up</p>
-                <p>
-                  all your favorite tvv for a better value and no hiddenfees.
-                </p>
+              <div className={cn("col-span-2")}>
+                <div className={cn("grid grid-cols-2 gap-4")}>
+                  <div className={cn("col-span-2")}>
+                    <p className={cn("text-sm text-blue-500")}>why choose up</p>
+                    <p className={cn("font-bold text-2xl text-blue-900")}>
+                      All your favorite tvv for a better value and no
+                      hiddenfees.
+                    </p>
+                  </div>
+                  <div className={cn("col-span-1")}>
+                    <TextImg />
+                  </div>
+                  <div className={cn("col-span-1")}>
+                    <TextImg />
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className={cn("grid grid-cols-2 gap-2")}>
               <div className={cn("col-span-1")}>
-                <TextImg />
-              </div>
-              <div className={cn("col-span-1")}>
-                <TextImg />
+                <SmallBoxes />
+                <SmallBoxes />
+                <SmallBoxes />
               </div>
             </div>
           </div>
@@ -170,17 +180,21 @@ export default function Home(props) {
       <section>
         <div className={cn("bg-gray-100")}>
           <div className={cn("container mx-auto")}>
-            <p className={cn("text-sm text-blue-700 text-center")}>
+            <p className={cn("text-sm text-blue-700 text-center pt-12 mb-0")}>
               Network Packages
             </p>
             <p className={cn("font-bold text-center text-2xl")}>
               Our Best Value Bundles
             </p>
-            <p className={cn("text-sm text-gray-500 text-center")}>
-              get the best deals on TV, internet &amp; Home phones for New York
+            <p className={cn("text-sm text-gray-500 text-center pb-3")}>
+              Get the best deals on TV, internet &amp; Home phones for New York
               City, NY
             </p>
-            <div className={cn(" md:grid grid-cols-4 gap-2")}>
+            <div
+              className={cn(
+                "grid sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-4 gap-2 pb-12"
+              )}
+            >
               <div className={cn("sm:pb-2 col-span-1")}>
                 <Card />
               </div>
@@ -215,11 +229,17 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section className={cn("pt-40 ")}>
+      <section className={cn("pt-20 ")}>
         <div className={cn("container mx-auto ")}>
-          <p className = {cn("text-sm text-blue-700 text-center")}>Phone and devices</p>
-          <p className = {cn("font-bold text-2xl text-blue-700 text-center")}>Buy trending products</p>
-          <p className = {cn("text-sm text-gray-500 text-center")}>order online today! Get FREE express shipping &amp; FREE returs</p>
+          <p className={cn("text-sm text-blue-700 text-center mb-0")}>
+            Phone and devices
+          </p>
+          <p className={cn("font-bold text-2xl text-blue-700 text-center")}>
+            Buy trending products
+          </p>
+          <p className={cn("text-sm text-gray-500 text-center pb-4")}>
+            order online today! Get FREE express shipping &amp; FREE returs
+          </p>
           <Swiper />
         </div>
       </section>
