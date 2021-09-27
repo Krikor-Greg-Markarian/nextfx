@@ -33,7 +33,7 @@ function Footer() {
         </div>
         <div className={cn("bg-gray-200 ")}>
           <div className={cn("container mx-auto pt-24")}>
-            <div className={cn("grid grid-cols-6 ")}>
+            <div className={cn("grid grid-cols-6 pt-4")}>
               <div className={cn("col-span-2  ")}>
                 <p className={cn("font-bold text-blue-800")}>About company</p>
                 <p className={cn("text-sm pt-4 text-gray-500 ")}>
