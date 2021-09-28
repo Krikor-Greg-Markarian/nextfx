@@ -4,12 +4,12 @@
 @tailwind utilities;
 
 .wall {
-  background-image: url("https://cdn.pixabay.com/photo/2021/08/20/14/53/monastery-6560623__340.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484__340.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 480px;
+  min-height: 480px;
 }
 
 .road {

@@ -3,12 +3,20 @@ import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import cn from "classnames";
 import Box from "../src/components/Box";
+import NavbarBlogs from "../src/components/NavbarBlogs";
 
 export default function Home(props) {
   return (
     <div>
       <section>
-        <Navbar />
+        
+        <Navbar>
+          <div className = {cn("container mx-auto")}>
+          <NavbarBlogs />
+          </div>
+        </Navbar>
+
+
       </section>
 
       <section>

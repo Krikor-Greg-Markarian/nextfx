@@ -3,12 +3,19 @@ import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import cn from "classnames";
 import IntSelection from "../src/components/IntSelection";
+import Router from "../src/components/Router";
+import QuestionAnswer from "../src/components/QuestionAnswer";
+import NavbarPackages from "../src/components/NavbarPackages"
 
 export default function Home(props) {
   return (
     <div>
       <section>
-        <Navbar />
+        <Navbar>
+          <div className = {cn("container mx-auto")}>
+          <NavbarPackages />
+          </div>
+        </Navbar>
       </section>
 
       <section>
@@ -38,7 +45,7 @@ export default function Home(props) {
                   <div className={cn("building w-full")}></div>
                 </div>
               </div>
-              <p>
+              <p className={cn("pt-8 text-sm text-gray-500")}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Praesentium sit tempora reprehenderit minima accusantium quia
                 sunt laborum cum voluptates temporibus dolores odit aspernatur.
@@ -47,7 +54,7 @@ export default function Home(props) {
                 et quibusdam asperiores, error, ullam dicta laboriosam illo.
               </p>
 
-              <p>
+              <p className={cn("pt-2 text-sm text-gray-500 pb-4")}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Praesentium sit tempora reprehenderit minima accusantium quia
                 sunt laborum cum voluptates temporibus dolores odit aspernatur.
@@ -55,17 +62,37 @@ export default function Home(props) {
                 voluptas delectus praesentium consectetur, saepe assumenda odio
                 et quibusdam asperiores, error, ullam dicta laboriosam illo.
               </p>
-              <div className = {cn("towers w-full")}></div>
-              <div className = {cn("grid grid-cols-3")}>
-                <div className = {cn("col-span-1")}>
-                    
+
+              <div className={cn("towers w-full")}></div>
+              <div
+                className={cn(
+                  "grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 pt-4"
+                )}
+              >
+                <div className={cn("col-span-1 pt-2 w-10/12")}>
+                  <Router />
+                </div>
+                <div className={cn("col-span-1 pt-2 w-10/12")}>
+                  <Router />
+                </div>
+                <div className={cn("col-span-1 pt-2 w-10/12")}>
+                  <Router />
                 </div>
               </div>
+              <p className={cn("text-sm text-blue-700  pt-12 mb-0")}>FAQs</p>
+              <p className={cn("font-bold text-2xl text-blue-900")}>
+                Get your fastest answer
+              </p>
+              <p className={cn("text-sm text-gray-500 pb-3")}>
+                Can't find what you're Looking for? view all FAQs.
+              </p>
+              <QuestionAnswer />
             </div>
-            
           </div>
         </div>
       </section>
+
+      <section></section>
 
       <section>
         <Footer />

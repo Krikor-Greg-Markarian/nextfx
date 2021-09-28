@@ -23,6 +23,7 @@ import RecCard from "../src/components/RecCard";
 import ClientReview from "../src/components/ClientReview";
 import ResumeCardRadio from "../src/components/ResumeCardRadio";
 import CardSwipe from "../src/components/CardSwipe";
+import NavbarText from "../src/components/NavbarText";
 
 // import { CircularProgressbar } from 'react-circular-progressbar';
 
@@ -30,7 +31,12 @@ export default function Home(props) {
   return (
     <div>
       <section>
-        <Navbar />
+     
+        <Navbar>
+         <NavbarText />
+        </Navbar>
+       
+        
       </section>
 
       <section>

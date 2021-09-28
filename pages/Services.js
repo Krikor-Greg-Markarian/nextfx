@@ -1,22 +1,28 @@
 import axios from "axios";
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
-import Card from "../src/components/Card";
 import cn from "classnames";
 import SmallImagText from "../src/components/SmallImagText";
 import AddressBar from "../src/components/AddressBar";
-import RecCard from "../src/components/RecCard";
 import RightPlan from "../src/components/RightPlan";
 import FiberConnection from "../src/components/FiberConnection";
 import Cardwithimages from "../src/components/Cardwithimages";
-import ResumeCardRadio from "../src/components/ResumeCardRadio";
 import CardWithoutShadow from "../src/components/CardWithoutShadow";
+import NavbarWifi from "../src/components/NavbarWifi";
+import React from "react";
+import "react-circular-progressbar/dist/styles.css";
+import OnecardInfo from "../src/components/OnecardInfo";
+import OfferAddons from "../src/components/OfferAddons";
 
 export default function Home(props) {
   return (
     <div>
       <section>
-        <Navbar />
+        <Navbar>
+          <div className={cn("container mx-auto")}>
+            <NavbarWifi />
+          </div>
+        </Navbar>
       </section>
 
       <section>
@@ -37,30 +43,22 @@ export default function Home(props) {
             )}
           >
             <div className={cn("col-span-1")}>
-              <div>
-                <Card />
-              </div>
+              <OnecardInfo />
             </div>
             <div className={cn("col-span-1")}>
-              <div>
-                <Card />
-              </div>
+              <OnecardInfo />
             </div>
             <div className={cn("col-span-1")}>
-              <div>
-                <Card />
-              </div>
+              <OnecardInfo />
             </div>
             <div className={cn("col-span-1")}>
-              <div>
-                <Card />
-              </div>
+              <OnecardInfo />
             </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <section className={cn("pt-5")}>
         <div className={cn("bg-gray-100 pb-10")}>
           <p className={cn("text-sm text-blue-700 text-center pt-12 mb-0")}>
             Our Services
@@ -113,16 +111,16 @@ export default function Home(props) {
             )}
           >
             <div className={cn("col-span-1")}>
-              <RecCard />
+              <OfferAddons />
             </div>
             <div className={cn("col-span-1")}>
-              <RecCard />
+              <OfferAddons />
             </div>
             <div className={cn("col-span-1")}>
-              <RecCard />
+              <OfferAddons />
             </div>
             <div className={cn("col-span-1")}>
-              <RecCard />
+              <OfferAddons />
             </div>
           </div>
         </div>

@@ -3,8 +3,7 @@ import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import cn from "classnames";
 import { FaCheck } from "react-icons/fa";
-import ClientReview from "../src/components/ClientReview";
-import CardResume from "../src/components/ResumeCardRadio";
+import NavbarBlogs from "../src/components/NavbarWifi";
 import ResumeCard from "../src/components/ResumeCard";
 import JobOpening from "../src/components/JobOpening";
 
@@ -43,7 +42,11 @@ export default function Home(props) {
   return (
     <div>
       <section>
-        <Navbar />
+        <Navbar>
+          <div className={cn("container mx-auto")}>
+            <NavbarBlogs />
+          </div>
+        </Navbar>
       </section>
 
       <section>
