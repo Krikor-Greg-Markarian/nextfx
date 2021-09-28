@@ -147,6 +147,16 @@
   height: 250px;
 }
 
+
+.blueback {
+  background-image: url("https://cdn.pixabay.com/photo/2016/08/31/17/02/blue-1634110__340.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 250px;
+}
+
 body {
   background-color: #f8f8f8;
 }
