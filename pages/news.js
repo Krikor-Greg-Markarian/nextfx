@@ -35,14 +35,8 @@ const Item = (props) => {
   );
 };
 
-
-
-const itembu = (props)=>{
-  return(
-    <div>
-      
-    </div>
-  );
+const itembu = (props) => {
+  return <div></div>;
 };
 
 export default function Home(props) {
@@ -60,29 +54,40 @@ export default function Home(props) {
           <p className={cn("font-bold text-center text-2xl text-blue-900")}>
             Current job Openings
           </p>
-          <p className={cn("text-sm text-gray-500 text-center pb-3")}>
+          <p className={cn("text-sm text-gray-500 text-center pb-4")}>
             our team is continually looking to recuit exceptional talent in all
             business areas and markets where we offer service. We're always
             looking for people to join our team.
           </p>
           <div>
-            <div className = {cn("grid grid-cols-4")}>
-              <div className = {cn("col-span-1")}>
-              <p className = {cn("text-sm text-center pr-20 text-blue-900 font-bold")}>Role</p>
+            <div className={cn("grid grid-cols-4")}>
+              <div className={cn("col-span-1")}>
+                <p
+                  className={cn(
+                    "text-sm text-center pr-20 text-blue-900 font-bold"
+                  )}
+                >
+                  Role
+                </p>
               </div>
-              <div className = {cn("col-span-1")}>
-              <p className = {cn("text-sm text-center text-blue-900 font-bold")}>Location</p>
+              <div className={cn("col-span-1")}>
+                <p
+                  className={cn("text-sm text-center text-blue-900 font-bold")}
+                >
+                  Location
+                </p>
               </div>
-              <div className = {cn("col-span-1")}>
-              <p className = {cn("text-sm text-center text-blue-900 font-bold")}>Type</p>
+              <div className={cn("col-span-1")}>
+                <p
+                  className={cn("text-sm text-center text-blue-900 font-bold")}
+                >
+                  Type
+                </p>
               </div>
-            
             </div>
             <JobOpening />
             <JobOpening />
             <JobOpening />
-            
-            
           </div>
           <p className={cn("text-sm text-gray-500 text-center pt-4")}>
             We are always on the looout for talented fol to join our team.Follow
