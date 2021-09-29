@@ -1,14 +1,12 @@
-import React from 'react'
-import cn from 'classnames'
+import React from "react";
+import cn from "classnames";
 
 function support() {
-    return (
-        <div>
-            <div className = {cn("")}>
-
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <div className={cn("")}></div>
+    </div>
+  );
 }
 
-export default support
+export default support;
