@@ -2,7 +2,6 @@ import React from "react";
 import cn from "classnames";
 import { FaCheck } from "react-icons/fa";
 
-
 function Offerinc(props) {
   return (
     <div>
