@@ -1,15 +1,11 @@
 import React from "react";
 import cn from "classnames";
 
-function TextImg() {
+function TextImg(props) {
   return (
     <div>
       <div>
-        <p className={cn("text-sm text-gray-400")}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
-          nesciunt suscipit eos explicabo quia ab accusamus placeat delectus
-          modi, culpa.
-        </p>
+        <p className={cn("text-sm text-gray-400")}>{props.title}</p>
         <div className={cn("new w-full")}></div>
       </div>
     </div>
