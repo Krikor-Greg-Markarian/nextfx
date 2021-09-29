@@ -1,7 +1,8 @@
 import React from "react";
 import cn from "classnames";
+import Button from "../components/Button";
 
-function InternetProvider() {
+function InternetProvider(props) {
   return (
     <div>
       <div className={cn("camera")}>
@@ -9,27 +10,32 @@ function InternetProvider() {
           <div className={cn("grid grid-cols-2")}>
             <div className={cn("col-span-1")}>
               <p className={cn("text-white font-bold text-2xl pb-2")}>
-                Your Local High Speed internet Provider
+                {props.title}
               </p>
-              <button className={cn("bg-blue-700 p-2 rounded text-sm")}>
-                Check Availability
-              </button>
+              <button className={cn("")}></button>
 
-              <button className={cn("text-white text-sm pl-4 font-bold")}>
-                Switch is easy
-              </button>
+              <Button
+                className={cn(
+                  "bg-blue-700 p-2 rounded text-sm w-5/12 text-center text-white inline"
+                )}
+                text=" Check Availability"
+              />
+
+              <Button
+                className={cn("text-white text-sm pl-4 font-bold inline ")}
+                text="Switch is easy"
+              />
+
               <div className={cn("pt-6")}></div>
               <div className={cn("border-1")}></div>
               <p className={cn("pt-4 text-sm text-white")}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis tempore porro in libero voluptatem iste officia id
-                nulla laboriosam molestias. A corporis totam ex cumque rerum
-                deserunt, accusantium repudiandae unde.
+                {props.description}
               </p>
             </div>
           </div>
         </div>
       </div>
+      {props.children}
     </div>
   );
 }
