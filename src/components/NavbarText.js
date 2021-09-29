@@ -1,5 +1,6 @@
 import React from "react";
 import cn from "classnames";
+import Button from "./Button";
 
 function NavbarText() {
   return (
@@ -13,13 +14,16 @@ function NavbarText() {
           and reliable internet connection that lets you do what you love online
         </p>
         <div className={cn("pt-2")}>
-          <button className={cn("bg-blue-700 p-2 text-white inline ")}>
-            Check availability
-          </button>
+          <Button
+            className={cn("bg-blue-700 p-2 text-white inline")}
+            text="Check Availability"
+          />
           <div className={cn("inline pl-2")}></div>
-          <button className={cn("text-black bg-blue-300 inline p-2 px-7 ")}>
-            Learn more
-          </button>
+
+          <Button
+            className={cn("bg-blue-400 p-2 text-white inline")}
+            text=" Learn more"
+          />
         </div>
       </div>
     </div>
