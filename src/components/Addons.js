@@ -1,7 +1,6 @@
 import React from "react";
 import cn from "classnames";
 
-
 function Addons(props) {
   return (
     <div>
@@ -18,7 +17,7 @@ function Addons(props) {
       </li>
       <li className={cn("text-sm text-gray-500")}>Internet equipment</li>
       <div className={cn("border-b-2 pt-3")}></div>
-      
+
       <div className={cn("pt-3 pb-1")}>
         <a href="" className={cn("text-blue-900 font-bold text-sm ")}>
           View deatils
