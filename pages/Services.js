@@ -13,6 +13,11 @@ import React from "react";
 import "react-circular-progressbar/dist/styles.css";
 import OnecardInfo from "../src/components/OnecardInfo";
 import OfferAddons from "../src/components/OfferAddons";
+import PlanItem from "../src/components/PlanItem";
+import BestValueitem from "../src/components/BestValueitem";
+import SolutionItam from "../src/components/SolutionItam";
+import Item from "../src/components/Item";
+import RightPlanitem from "../src/components/RightPlanitem";
 
 export default function Home(props) {
   return (
@@ -43,16 +48,52 @@ export default function Home(props) {
             )}
           >
             <div className={cn("col-span-1")}>
-              <OnecardInfo />
+              <BestValueitem
+                title={"STANDARD"}
+                price={"$49.99"}
+                text={[
+                  { text: "Free Google Voice Remote and DVR included" },
+                  { text: "60+ HD Channels" },
+                  { text: "Local Channels" },
+                  { text: "190 Channel" },
+                ]}
+              />
             </div>
             <div className={cn("col-span-1")}>
-              <OnecardInfo />
+              <BestValueitem
+                title={"SILVER"}
+                price={"$74.99"}
+                text={[
+                  { text: "Free Google Voice Remote and DVR included" },
+                  { text: "110+ HD Channels" },
+                  { text: "Local Channels" },
+                  { text: "190+ Channel" },
+                ]}
+              />
             </div>
             <div className={cn("col-span-1")}>
-              <OnecardInfo />
+              <BestValueitem
+                title={"GOLD"}
+                price={"$84.99"}
+                text={[
+                  { text: "Free Google Voice Remote and DVR included" },
+                  { text: "125+ HD Channels" },
+                  { text: "Local Channels" },
+                  { text: "240+ Channel" },
+                ]}
+              />
             </div>
             <div className={cn("col-span-1")}>
-              <OnecardInfo />
+              <BestValueitem
+                title={"DIAMOND"}
+                price={"$94.99"}
+                text={[
+                  { text: "Free Google Voice Remote and DVR included" },
+                  { text: "140+ HD Channels" },
+                  { text: "Local Channels" },
+                  { text: "290+ Channel" },
+                ]}
+              />
             </div>
           </div>
         </div>
@@ -73,16 +114,32 @@ export default function Home(props) {
           <div className={cn("container mx-auto")}>
             <div className={cn("md:grid grid-cols-4 gap-4")}>
               <div className={cn("col-span-1 sm:pt-4")}>
-                <SmallImagText />
+                <SolutionItam
+                  title="Network &amp; Connectivity"
+                  description="Solutions to optimize performance and deliver the bandwidth and reliablility needed to support IT transformation."
+                  tag="Lear more"
+                />
               </div>
               <div className={cn("col-span-1 sm:pt-4")}>
-                <SmallImagText />
+                <SolutionItam
+                  title="UC &amp; Voice"
+                  description="unified communications and colaboration solutions to engage customers, empower your people and deliver a different CX"
+                  tag="Lear more"
+                />
               </div>
               <div className={cn("col-span-1 sm:pt-4")}>
-                <SmallImagText />
+                <SolutionItam
+                  title="Security &amp; Compliance"
+                  description="Fully managed enterprise security solutions to protect your data, sutomers and business reputation from costly digital threats and attacks."
+                  tag="Lear more"
+                />
               </div>
               <div className={cn("col-span-1 sm:pt-4")}>
-                <SmallImagText />
+                <SolutionItam
+                  title="Professional Services"
+                  description="Experts to argument your staff, freeing your team to focus on strategic innovation and growth."
+                  tag="Lear more"
+                />
               </div>
             </div>
           </div>
@@ -111,16 +168,76 @@ export default function Home(props) {
             )}
           >
             <div className={cn("col-span-1")}>
-              <OfferAddons />
+              <PlanItem
+                price={"$49"}
+                sup={"99"}
+                mo={"/mo"}
+                includes={[
+                  { text: "FREE no-Contact installation" },
+                  { text: "30-Day Money-Back Guarantee" },
+                  { text: "Up to 100Mbps internet" },
+                ]}
+                addons={[
+                  { text: "Whole-Home Wifi for $9.99/month" },
+                  { text: "Home Phones for$9.99/month" },
+                  { text: "Services Protection plan for $5/month" },
+                  { text: "Internet equipment" },
+                ]}
+              />
             </div>
             <div className={cn("col-span-1")}>
-              <OfferAddons />
+              <PlanItem
+                price={"$74"}
+                sup={"99"}
+                mo={"/mo"}
+                includes={[
+                  { text: "FREE no-Contact installation" },
+                  { text: "30-Day Money-Back Guarantee" },
+                  { text: "Up to 200Mbps internet" },
+                ]}
+                addons={[
+                  { text: "Whole-Home Wifi for $7.99/month" },
+                  { text: "Home Phones for$8.99/month" },
+                  { text: "Services Protection plan for $5/month" },
+                  { text: "Internet equipment" },
+                ]}
+              />
             </div>
             <div className={cn("col-span-1")}>
-              <OfferAddons />
+              <PlanItem
+                price={"$84"}
+                sup={"99"}
+                mo={"/mo"}
+                includes={[
+                  { text: "FREE no-Contact installation" },
+                  { text: "30-Day Money-Back Guarantee" },
+                  { text: "Up to 100Mbps internet" },
+                ]}
+                addons={[
+                  { text: "Whole-Home Wifi for $4.99/month" },
+                  { text: "Home Phones for$4.99/month" },
+                  { text: "Services Protection plan for $5/month" },
+                  { text: "Internet equipment" },
+                ]}
+              />
             </div>
             <div className={cn("col-span-1")}>
-              <OfferAddons />
+              <PlanItem
+                price={"$94"}
+                sup={"99"}
+                mo={"/mo"}
+                includes={[
+                  { text: "FREE no-Contact installation" },
+                  { text: "30-Day Money-Back Guarantee" },
+                  { text: "Up to 100Mbps internet" },
+                ]}
+                addons={[
+                  { text: "Free whole-Home Wifi $2.99/month" },
+                  { text: "Home Phones for$9.99/month" },
+                  { text: "Services Protection plan for $5/month" },
+                  { text: "Internet equipment" },
+                ]}
+              />
             </div>
           </div>
         </div>
@@ -186,13 +303,49 @@ export default function Home(props) {
         <div className={cn("container mx-auto pt-3")}>
           <div className={cn("md:grid grid-cols-3 gap-4")}>
             <div className={cn("col-span-1")}>
-              <RightPlan />
+              <RightPlanitem
+                smalltitle="Personal"
+                title="Good Value"
+                price="$39.99"
+                month="/month"
+                item={[
+                  { text: "250 Mbps" },
+                  { text: "400Gb included data" },
+                  {
+                    text: "premium productivity features and simple, secure file sharing",
+                  },
+                ]}
+              />
             </div>
             <div className={cn("col-span-1")}>
-              <RightPlan />
+              <RightPlanitem
+                smalltitle="Small family"
+                title="Most Popular"
+                price="$49.99"
+                month="/month"
+                item={[
+                  { text: "500 Mbps" },
+                  { text: "500 GB included data" },
+                  {
+                    text: "premium productivity features and simple, secure file sharing",
+                  },
+                ]}
+              />
             </div>
             <div className={cn("col-span-1")}>
-              <RightPlan />
+              <RightPlanitem
+                smalltitle="Business"
+                title="Top Speed"
+                price="$59.99"
+                month="/month"
+                item={[
+                  { text: "940 Mbps" },
+                  { text: "Unlimited included data" },
+                  {
+                    text: "premium productivity features and simple, secure file sharing",
+                  },
+                ]}
+              />
             </div>
           </div>
         </div>
