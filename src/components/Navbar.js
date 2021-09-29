@@ -86,7 +86,7 @@ function Navbar(props) {
                   <div class="flex border-1">
                     <div class="flex-grow bg-white p-1 pt-2">
                       <li className={cn("text-sm list-none inline")}>
-                        <Link className={cn("no-underline")} href="/home">
+                        <Link className={cn("no-underline")} href="/">
                           <a className={cn("no-underline")}>Home</a>
                         </Link>
                       </li>
