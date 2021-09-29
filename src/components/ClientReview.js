@@ -23,7 +23,6 @@ function ClientReview(props) {
       </div>
       <div className={cn("border-b-2 pt-4 border-gray-400")}></div>
       <p className={cn("inline")}>Global News</p>{" "}
-      
       <span className={cn("inline ml-2")}>News Tv</span>{" "}
       <span className={cn("inline ml-2")}>News</span>
       <span className={cn("inline ml-2")}>One</span>
