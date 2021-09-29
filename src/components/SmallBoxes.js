@@ -1,7 +1,7 @@
 import React from "react";
 import cn from "classNames";
 
-function SmallBoxes() {
+function SmallBoxes(props) {
   return (
     <div className={cn("")}>
       <div className={cn("pt-1 pl-10")}>
@@ -9,9 +9,9 @@ function SmallBoxes() {
           <div class="flex-shrink ">
             <div className={cn("small rounded-full")}></div>
           </div>
-          <div class="flex-shrink ">
-            <p className={cn("font-bold")}>370+</p>
-            <p className={cn("text-gray-500 text-sm")}>Available Channels</p>
+          <div class="flex-shrink pl-3">
+            <p className={cn("font-bold mb-0 text-2xl")}>{props.channel}</p>
+            <p className={cn("text-gray-500 text-xs")}>{props.available}</p>
           </div>
         </div>
       </div>
