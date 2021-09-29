@@ -3,14 +3,7 @@ import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import Card from "../src/components/Card";
 import cn from "classnames";
-import ResumeCard from "../src/components/ResumeCard";
-import JobOpening from "../src/components/JobOpening";
-import Box from "../src/components/Box";
-import IntSelection from "../src/components/IntSelection";
-import Router from "../src/components/Router";
 import QuestionAnswer from "../src/components/QuestionAnswer";
-import RightPlan from "../src/components/RightPlan";
-import FiberConnection from "../src/components/FiberConnection";
 import AddressBar from "../src/components/AddressBar";
 import FastestSpeed from "../src/components/FastestSpeed";
 import InternetProvider from "../src/components/InternetProvider";
@@ -22,28 +15,60 @@ import { FaCheck } from "react-icons/fa";
 import RecCard from "../src/components/RecCard";
 import ClientReview from "../src/components/ClientReview";
 import ResumeCardRadio from "../src/components/ResumeCardRadio";
-import CardSwipe from "../src/components/CardSwipe";
 import NavbarText from "../src/components/NavbarText";
+import Button from "../src/components/Button";
+import Experienceitem from "../src/components/Experienceitem";
+import CardShadowRec from "../src/components/CardShadowRec";
+import BestValueitem from "../src/components/BestValueitem";
 
 // import { CircularProgressbar } from 'react-circular-progressbar';
+
+const netFx = [
+  {
+    title: "Wifi internet",
+    description: "High-Speed internet access that is always on & fast.",
+  },
+];
+
+const favorite = [
+  {
+    title:
+      "Streaming TV gives you instant access to all your favorite Live channels and OnDemand video at a low Price. Best of all, there are no hidden fees, equipment rentals or contracrs. Stream all of your favorite shows, surf the web",
+  },
+];
+
+const channel = [
+  {
+    channel: "370+",
+    available: "Available Channels",
+  },
+];
 
 export default function Home(props) {
   return (
     <div>
       <section>
-     
         <Navbar>
-         <NavbarText />
+          <NavbarText />
         </Navbar>
-       
-        
       </section>
 
       <section>
         <div className={cn("bg-white container mx-auto")}>
           <div className={cn("md:grid grid-cols-2 gap-4 sm:pb-8 ")}>
             <div className={cn("col-span-1 pt-12")}>
-              <FastestSpeed />
+              <FastestSpeed
+                smalltitle="Unlimited Possibilities"
+                description="Get your fastest speed"
+              />
+              <div className={cn("flex justify-center items-center")}>
+                <Button
+                  className={cn(
+                    "bg-blue-800 w-6/12 text-sm text-white p-2 rounded text-center"
+                  )}
+                  text="Check coverage map"
+                />
+              </div>
             </div>
             <div className={cn("col-span-1 pt-12 sm:pt-16")}>
               <QuestionAnswer />
@@ -53,7 +78,10 @@ export default function Home(props) {
       </section>
 
       <section className={cn("sm:pb-8 md:pb-0 lg:pb-0")}>
-        <InternetProvider />
+        <InternetProvider
+          title="Your Local High Speed internet Provider"
+          description="NetFx is an award winning high speed internet provider offering reliable and affordable internet services in NYC, with gigabit internet speeds up to 940* Mbps."
+        />
       </section>
 
       <section>
@@ -117,31 +145,23 @@ export default function Home(props) {
             </div>
             <div className={cn("md:grid grid-cols-4 gap-4 pt-2")}>
               <div className={cn("col-span-1")}>
-                <RecCard>
-                  <Unlimited />
-                </RecCard>
-              </div>
-              <div className={cn("col-span-1")}>
-                <RecCard>
-                  <Unlimited />
-                </RecCard>
-              </div>
-              <div className={cn("col-span-1")}>
-                <RecCard>
-                  <Unlimited />
-                </RecCard>
-              </div>
-              <div className={cn("col-span-1")}>
-                <RecCard>
-                  <Unlimited />
-                </RecCard>
+                {netFx.map((item, idx) => (
+                  <Experienceitem
+                    key={idx}
+                    title={item.title}
+                    description={item.description}
+                  />
+                ))}
               </div>
             </div>
             <div>
               <div className={cn("flex justify-center items-center pt-8")}>
-                <button className={cn("bg-blue-400 text-sm p-2 font-bold")}>
-                  More About services
-                </button>
+                <Button
+                  className={cn(
+                    "bg-blue-800 text-white text-center p-2 w-3/12 rounded"
+                  )}
+                  text="More about services"
+                />
               </div>
             </div>
           </div>
@@ -155,24 +175,29 @@ export default function Home(props) {
               <div className={cn("col-span-2")}>
                 <div className={cn("grid grid-cols-2 gap-4")}>
                   <div className={cn("col-span-2")}>
-                    <p className={cn("text-sm text-blue-500")}>why choose up</p>
-                    <p className={cn("font-bold text-2xl text-blue-900")}>
-                      All your favorite tvv for a better value and no
-                      hiddenfees.
+                    <p className={cn("text-blue-800 text-sm mb-0")}>
+                      Why Choose us
+                    </p>
+                    <p className={cn("font-bold text-2xl text-blue-800")}>
+                      All your favorite TV for a better value and no hidden
+                      fees.
                     </p>
                   </div>
                   <div className={cn("col-span-1")}>
-                    <TextImg />
-                  </div>
-                  <div className={cn("col-span-1")}>
-                    <TextImg />
+                    {favorite.map((item, idx) => (
+                      <TextImg key={idx} title={item.title} />
+                    ))}
                   </div>
                 </div>
               </div>
               <div className={cn("col-span-1")}>
-                <SmallBoxes />
-                <SmallBoxes />
-                <SmallBoxes />
+                {channel.map((item, idx) => (
+                  <SmallBoxes
+                    key={idx}
+                    channel={item.channel}
+                    available={item.available}
+                  />
+                ))}
               </div>
             </div>
           </div>
@@ -189,12 +214,12 @@ export default function Home(props) {
             <p className={cn("text-sm text-blue-700 text-center pt-12 mb-0")}>
               Network Packages
             </p>
-            <p className={cn("font-bold text-center text-2xl")}>
+            <p className={cn("font-bold text-center text-2xl text-blue-900")}>
               Our Best Value Bundles
             </p>
             <p className={cn("text-sm text-gray-500 text-center pb-3")}>
-              Get the best deals on TV, internet &amp; Home phones for New York
-              City, NY
+              Get the best deals on TV,internet &amp; Home Phone for New York
+              City, NY.
             </p>
             <div
               className={cn(
@@ -202,16 +227,52 @@ export default function Home(props) {
               )}
             >
               <div className={cn("sm:pb-2 col-span-1")}>
-                <Card />
+                <BestValueitem
+                  title={"STANDARD"}
+                  price={"$49.99"}
+                  text={[
+                    { text: "Free Google Voice Remote and DVR included" },
+                    { text: "60+ HD Channels" },
+                    { text: "Local Channels" },
+                    { text: "190 Channel" },
+                  ]}
+                />
               </div>
               <div className={cn("sm:pb-2 col-span-1")}>
-                <Card />
+                <BestValueitem
+                  title={"SILVER"}
+                  price={"$74.99"}
+                  text={[
+                    { text: "Free Google Voice Remote and DVR included" },
+                    { text: "110+ HD Channels" },
+                    { text: "Local Channels" },
+                    { text: "190+ Channel" },
+                  ]}
+                />
               </div>
               <div className={cn("sm:pb-2 col-span-1")}>
-                <Card />
+                <BestValueitem
+                  title={"GOLD"}
+                  price={"$84.99"}
+                  text={[
+                    { text: "Free Google Voice Remote and DVR included" },
+                    { text: "125+ HD Channels" },
+                    { text: "Local Channels" },
+                    { text: "240+ Channel" },
+                  ]}
+                />
               </div>
               <div className={cn("sm:pb-2 col-span-1")}>
-                <Card />
+                <BestValueitem
+                  title={"DIAMON"}
+                  price={"$94.99"}
+                  text={[
+                    { text: "Free Google Voice Remote and DVR included" },
+                    { text: "140+ HD Channels" },
+                    { text: "Local Channels" },
+                    { text: "290+ Channel" },
+                  ]}
+                />
               </div>
             </div>
           </div>
