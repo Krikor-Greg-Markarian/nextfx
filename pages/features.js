@@ -5,15 +5,16 @@ import cn from "classnames";
 import IntSelection from "../src/components/IntSelection";
 import Router from "../src/components/Router";
 import QuestionAnswer from "../src/components/QuestionAnswer";
-import NavbarPackages from "../src/components/NavbarPackages"
+import NavbarPackages from "../src/components/NavbarPackages";
+import WifiBlanketitem from "../src/components/WifiBlanketitem";
 
 export default function Home(props) {
   return (
     <div>
       <section>
         <Navbar>
-          <div className = {cn("container mx-auto")}>
-          <NavbarPackages />
+          <div className={cn("container mx-auto")}>
+            <NavbarPackages />
           </div>
         </Navbar>
       </section>
@@ -22,8 +23,20 @@ export default function Home(props) {
         <div className={cn("container mx-auto")}>
           <div className={cn("grid grid-cols-4")}>
             <div className={cn("col-span-1 pt-14")}>
-              <IntSelection />
+              <WifiBlanketitem
+                select={[
+                  { number: "01.", descrition: "WIFI INTERNET" },
+                  { number: "02.", descrition: "MOBILE CONNECTION" },
+                  { number: "03.", descrition: "TV BOX" },
+                  { number: "04.", descrition: "SMART HOME" },
+                  { number: "05.", descrition: "SATELITE TV" },
+                  { number: "06.", descrition: "BROADBAND" },
+                  { number: "07.", descrition: "INTERNET" },
+                  { number: "08.", descrition: "BUSNINESS" },
+                ]}
+              />
             </div>
+
             <div className={cn("col-span-3 pl-10")}>
               <p className={cn("text-sm text-blue-700  pt-12 mb-0")}>
                 What we offer?
@@ -62,7 +75,6 @@ export default function Home(props) {
                 voluptas delectus praesentium consectetur, saepe assumenda odio
                 et quibusdam asperiores, error, ullam dicta laboriosam illo.
               </p>
-
               <div className={cn("towers w-full")}></div>
               <div
                 className={cn(
@@ -70,13 +82,22 @@ export default function Home(props) {
                 )}
               >
                 <div className={cn("col-span-1 pt-2 w-10/12")}>
-                  <Router />
+                  <Router
+                    title="WHOLE HOME WIFI"
+                    description="Delivering fast, relaible Wifi throughout your home."
+                  />
                 </div>
                 <div className={cn("col-span-1 pt-2 w-10/12")}>
-                  <Router />
+                  <Router
+                    title="STANDARD WIFI ROUTER"
+                    description="Get the right modern for your speed and a router."
+                  />
                 </div>
                 <div className={cn("col-span-1 pt-2 w-10/12")}>
-                  <Router />
+                  <Router
+                    title="MODEM ONLY WIFI"
+                    description="Including full 24/7 support and upgrades as needed."
+                  />
                 </div>
               </div>
               <p className={cn("text-sm text-blue-700  pt-12 mb-0")}>FAQs</p>
