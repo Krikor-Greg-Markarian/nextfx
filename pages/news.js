@@ -5,7 +5,7 @@ import cn from "classnames";
 import { FaCheck } from "react-icons/fa";
 import NavbarBlogs from "../src/components/NavbarWifi";
 import ResumeCard from "../src/components/ResumeCard";
-import JobOpening from "../src/components/JobOpening";
+import CUrrentJobItem from "../src/components/CUrrentJobItem";
 
 const Item = (props) => {
   return (
@@ -50,53 +50,28 @@ export default function Home(props) {
       </section>
 
       <section>
-        <div className={cn("container mx-auto")}>
-          <p className={cn("text-sm text-blue-700 text-center pt-12 mb-0")}>
-            We're hiring
-          </p>
-          <p className={cn("font-bold text-center text-2xl text-blue-900")}>
-            Current job Openings
-          </p>
-          <p className={cn("text-sm text-gray-500 text-center pb-4")}>
-            our team is continually looking to recuit exceptional talent in all
-            business areas and markets where we offer service. We're always
-            looking for people to join our team.
-          </p>
-          <div>
-            <div className={cn("grid grid-cols-4")}>
-              <div className={cn("col-span-1")}>
-                <p
-                  className={cn(
-                    "text-sm text-center pr-20 text-blue-900 font-bold"
-                  )}
-                >
-                  Role
-                </p>
-              </div>
-              <div className={cn("col-span-1")}>
-                <p
-                  className={cn("text-sm text-center text-blue-900 font-bold")}
-                >
-                  Location
-                </p>
-              </div>
-              <div className={cn("col-span-1")}>
-                <p
-                  className={cn("text-sm text-center text-blue-900 font-bold")}
-                >
-                  Type
-                </p>
-              </div>
-            </div>
-            <JobOpening />
-            <JobOpening />
-            <JobOpening />
-          </div>
-          <p className={cn("text-sm text-gray-500 text-center pt-4")}>
-            We are always on the looout for talented fol to join our team.Follow
-            us on <a href="">Linkedin</a>!{" "}
-          </p>
-        </div>
+        <CUrrentJobItem
+          select={[
+            {
+              title: "Network Engineer",
+              city: "New York",
+              time: "Full time",
+              button: "Apply now",
+            },
+            {
+              title: "Technical Support",
+              city: "New York",
+              time: "Full time",
+              button: "Apply now",
+            },
+            {
+              title: "Corporate Sales Executive",
+              city: "New York",
+              time: "Full time",
+              button: "Apply now",
+            },
+          ]}
+        />
       </section>
 
       <section className={cn("pt-10 pb-10")}>
