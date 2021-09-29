@@ -71,11 +71,17 @@ const CardResume = (props) => {
         </p>
         <div className={cn("inline")}>
           <input type="radio" name="" id="" />
-          <label htmlFor="" className = {cn("pl-3")}> Email</label>
+          <label htmlFor="" className={cn("pl-3")}>
+            {" "}
+            Email
+          </label>
         </div>
         <div className={cn("pl-20 inline")}>
           <input type="radio" name="" id="" />
-          <label htmlFor="" className = {cn("pl-3")}> Phone</label>
+          <label htmlFor="" className={cn("pl-3")}>
+            {" "}
+            Phone
+          </label>
         </div>
       </div>
       <div className={cn("pt-4 pb-2")}>
