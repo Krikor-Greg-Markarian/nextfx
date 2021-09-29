@@ -4,7 +4,9 @@ import cn from "classnames";
 const Item = (props) => {
   return (
     <div className={cn("pt-20")}>
-      <p className={cn("text-3xl text-blue-900 font-bold mb-0")}>{props.title}</p>
+      <p className={cn("text-3xl text-blue-900 font-bold mb-0")}>
+        {props.title}
+      </p>
       <li className={cn("inline")}>
         <a
           href=""
