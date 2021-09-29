@@ -53,42 +53,6 @@ function Navbar(props) {
         </div>
       </div>
       <div className={cn("container mx-auto ")}>
-        {/* <div className="border-8 border-red-600">
-          <div className={cn("bg-blue-100")}>
-            <p className={cn("text-sm inline")}>Residential Services</p>
-            <p className={cn("text-sm inline text-gray-400 pl-4")}>
-              Business Services
-            </p>
-            <FaBlackberry className={cn("inline float-right ml-5")} />
-            <FaConnectdevelop className={cn("inline float-right ml-1")} />
-          </div>
-
-          <div className={cn("py-3 bg-white")}>
-            <li className={cn("inline")}>
-              <Link href="/">Home</Link>
-            </li>
-            <li className={cn("inline ml-3")}>
-              <Link href="/packages">Packages</Link>
-            </li>
-            <li className={cn("inline ml-3")}>
-              <Link href="/services">Services</Link>
-            </li>
-            <li className={cn("inline ml-3")}>
-              <Link className={cn("no-underline")} href="/features">
-                Features
-              </Link>
-            </li>
-            <li className={cn("inline ml-3")}>
-              <Link href="news">News</Link>
-            </li>
-            <li className={cn("inline ml-3")}>
-              <a href="#">Contacts</a>
-            </li>
-
-            <FaSearch className={cn("inline float-right")} />
-          </div>
-        </div> */}
-
         <div className={cn("pb-8")}>
           <div className={cn("container mx-auto")}>
             <div className={cn("grid grid-cols-4")}>
