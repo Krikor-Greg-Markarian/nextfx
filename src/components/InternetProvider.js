@@ -12,8 +12,6 @@ function InternetProvider(props) {
               <p className={cn("text-white font-bold text-2xl pb-2")}>
                 {props.title}
               </p>
-              <button className={cn("")}></button>
-
               <Button
                 className={cn(
                   "bg-blue-700 p-2 rounded text-sm w-5/12 text-center text-white inline"
