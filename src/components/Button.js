@@ -4,7 +4,7 @@ import cn from "classnames";
 function Button(props) {
   return (
     <div className={cn(props.className)}>
-      <button className={cn("")}>{props.text}</button>
+      <button>{props.text}</button>
     </div>
   );
 }
