@@ -2,6 +2,10 @@ import React from "react";
 import cn from "classnames";
 
 function JobOpening(props) {
+  const styleClass = {
+    backgroundcolor: props.backgroundcolor ?? "bg-blue-100",
+  };
+
   return (
     <div className={cn("grid grid-cols-4")}>
       <div className={cn("col-span-1")}>
