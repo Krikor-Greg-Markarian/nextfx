@@ -9,7 +9,6 @@ import InternetProvider from "../src/components/InternetProvider";
 import SmallBoxes from "../src/components/SmallBoxes";
 import TextImg from "../src/components/TextImg";
 import Swiper from "../src/components/Swiper";
-import { FaCheck } from "react-icons/fa";
 import ClientReview from "../src/components/ClientReview";
 import ResumeCardRadio from "../src/components/ResumeCardRadio";
 import NavbarText from "../src/components/NavbarText";
@@ -301,7 +300,13 @@ export default function Home(props) {
           <div className={cn("container mx-auto")}>
             <div className={cn("md:grid grid-cols-2")}>
               <div className={cn("col-span-1")}>
-                <ClientReview />
+                <ClientReview
+                  smalltitel="Testimonials"
+                  title="Our client love us!"
+                  description="Amazing customer service both over the phone and in person. The technician was dedicated to a thorough installation. NetFx rocks! internet speed delivery was exactly as promised, you guys are #1"
+                  name="Alex Rovia"
+                  location="Los Angeles,California"
+                />
               </div>
               <div className={cn("col-span-1 relative")}>
                 <div className={cn("absolute right-0 top-10")}>
