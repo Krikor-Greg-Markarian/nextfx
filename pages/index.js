@@ -28,12 +28,28 @@ const netFx = [
     title: "Wifi internet",
     description: "High-Speed internet access that is always on & fast.",
   },
+  {
+    title: "Wifi internet",
+    description: "High-Speed internet access that is always on & fast.",
+  },
+  {
+    title: "Wifi internet",
+    description: "High-Speed internet access that is always on & fast.",
+  },
+  {
+    title: "Wifi internet",
+    description: "High-Speed internet access that is always on & fast.",
+  },
 ];
 
 const favorite = [
   {
     title:
-      "Streaming TV gives you instant access to all your favorite Live channels and OnDemand video at a low Price. Best of all, there are no hidden fees, equipment rentals or contracrs. Stream all of your favorite shows, surf the web",
+      "Streaming TV gives you instant access to all your favorite Live channels and OnDemand video at a low Price. Best of all, there are no hidden fees, equipment rentals or contracts. Stream all of your favorite shows, surf the web",
+  },
+  {
+    title:
+      "We've streamlined our plans to give you the fastest internet available at your address for one low monthly price. TV you want, when you want it. Enjoy your favorite shows and movies on your own schedule.",
   },
 ];
 
@@ -144,15 +160,15 @@ export default function Home(props) {
               </div>
             </div>
             <div className={cn("md:grid grid-cols-4 gap-4 pt-2")}>
-              <div className={cn("col-span-1")}>
-                {netFx.map((item, idx) => (
+              {netFx.map((item, idx) => (
+                <div className={cn("col-span-1")}>
                   <Experienceitem
                     key={idx}
                     title={item.title}
                     description={item.description}
                   />
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
             <div>
               <div className={cn("flex justify-center items-center pt-8")}>
@@ -183,11 +199,12 @@ export default function Home(props) {
                       fees.
                     </p>
                   </div>
-                  <div className={cn("col-span-1")}>
-                    {favorite.map((item, idx) => (
+
+                  {favorite.map((item, idx) => (
+                    <div className={cn("col-span-1")}>
                       <TextImg key={idx} title={item.title} />
-                    ))}
-                  </div>
+                    </div>
+                  ))}
                 </div>
               </div>
               <div className={cn("col-span-1")}>
