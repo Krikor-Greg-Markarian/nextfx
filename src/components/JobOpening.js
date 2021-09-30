@@ -3,12 +3,12 @@ import cn from "classnames";
 
 function JobOpening(props) {
   const styleClass = {
-    backgroundcolor: props.backgroundcolor ?? "bg-blue-100",
+    backgroundcolor: props.backgroundcolor ?? "bg-white",
   };
 
   return (
-    <div className={cn("grid grid-cols-4")}>
-      <div className={cn("col-span-1")}>
+    <div className={cn("grid grid-cols-4", styleClass.backgroundcolor)}>
+      <div className={cn("col-span-1 ")}>
         <p className={cn("text-blue-800 font-bold text-sm pt-2 text-center")}>
           {props.title}
         </p>

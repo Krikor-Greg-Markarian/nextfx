@@ -5,11 +5,6 @@ import IntSelection from "./IntSelection";
 function WifiBlanketitem(props) {
   return (
     <div>
-      <p>
-        {props.number}
-        <span>{props.descrition}</span>
-      </p>
-
       {props.select.map((item, idx) => (
         <IntSelection number={item.number} descrition={item.descrition} />
       ))}
