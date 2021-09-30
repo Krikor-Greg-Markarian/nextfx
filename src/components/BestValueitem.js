@@ -11,7 +11,7 @@ const percentage = 66;
 
 function BestValueitem(props) {
   return (
-    <CardShadow>
+    <CardShadow className={cn("relative")}>
       <div className={cn("flex justify-center pb-2")}>
         <div style={{ width: 50, height: 50 }}>
           <CircularProgressbar value={66} text={`${percentage}%`} />
@@ -38,6 +38,20 @@ function BestValueitem(props) {
       <p className={cn("text-sm text-blue-800 text-center underline")}>
         or call1(900) 232 123
       </p>
+
+      {props.isMostPopular ? (
+        <div className={cn("flex justify-center items-center")}>
+          <div
+            className={cn(
+              " px-2 bg-pink-600 text-center text-white rounded text-sm absolute -top-3 "
+            )}
+          >
+            MOST POPULAR
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </CardShadow>
   );
 }
