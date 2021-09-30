@@ -6,7 +6,7 @@ function Box(props) {
     <div>
       <div className={cn("instrument rounded w-full")}></div>
       <p className={cn("text-gray-500 text-sm pt-2 mb-0")}>
-        May 11,2020 / By{" "}
+        May 11,2020 / By
         <span className={cn("text-pink-600 text-sm font-bold")}>
           Emma Waston
         </span>
