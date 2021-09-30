@@ -2,21 +2,16 @@ import axios from "axios";
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import cn from "classnames";
-import SmallImagText from "../src/components/SmallImagText";
 import AddressBar from "../src/components/AddressBar";
-import RightPlan from "../src/components/RightPlan";
 import FiberConnection from "../src/components/FiberConnection";
 import Cardwithimages from "../src/components/Cardwithimages";
 import CardWithoutShadow from "../src/components/CardWithoutShadow";
 import NavbarWifi from "../src/components/NavbarWifi";
 import React from "react";
 import "react-circular-progressbar/dist/styles.css";
-import OnecardInfo from "../src/components/OnecardInfo";
-import OfferAddons from "../src/components/OfferAddons";
 import PlanItem from "../src/components/PlanItem";
 import BestValueitem from "../src/components/BestValueitem";
 import SolutionItam from "../src/components/SolutionItam";
-import Item from "../src/components/Item";
 import RightPlanitem from "../src/components/RightPlanitem";
 
 export default function Home(props) {
