@@ -22,12 +22,13 @@ const CardSwipe = (props) => {
         <div className={cn("iphone6 relative")}>
           <div className={cn("flex justify-center items-center")}>
             <div className={cn("absolute top-28")}>
-              <Button
+              {props.addtocart ? ( <Button
                 className={cn(
                   "text-white ml-2 bg-blue-800 p-2 rounded text-xs"
                 )}
                 text="Add to cart"
-              />
+              />):("")}
+             
             </div>
           </div>
         </div>
