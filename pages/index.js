@@ -165,6 +165,7 @@ export default function Home(props) {
                     key={idx}
                     title={item.title}
                     description={item.description}
+                    
                   />
                 </div>
               ))}
