@@ -311,6 +311,8 @@ export default function Home(props) {
                 title="Good Value"
                 price="$39.99"
                 month="/month"
+                text = "Order now"
+                planBackgroundColor="bg-blue-400"
                 item={[
                   { text: "250 Mbps" },
                   { text: "400Gb included data" },
@@ -326,6 +328,7 @@ export default function Home(props) {
                 title="Most Popular"
                 price="$49.99"
                 month="/month"
+                text = "Purchase now"
                 item={[
                   { text: "500 Mbps" },
                   { text: "500 GB included data" },
@@ -341,6 +344,7 @@ export default function Home(props) {
                 title="Top Speed"
                 price="$59.99"
                 month="/month"
+                text = "Purchase now"
                 item={[
                   { text: "940 Mbps" },
                   { text: "Unlimited included data" },
