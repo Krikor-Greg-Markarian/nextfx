@@ -5,7 +5,9 @@ import "react-circular-progressbar/dist/styles.css";
 
 function CardShadow(props) {
   return (
-    <div className={cn("p-4", styles.mainContainer, props.className)}>{props.children}</div>
+    <div className={cn("p-4", styles.mainContainer, props.className)}>
+      {props.children}
+    </div>
   );
 }
 
