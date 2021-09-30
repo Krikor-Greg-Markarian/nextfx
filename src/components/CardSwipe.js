@@ -23,7 +23,9 @@ const CardSwipe = (props) => {
           <div className={cn("flex justify-center items-center")}>
             <div className={cn("absolute top-28")}>
               <Button
-                className={cn("text-white ml-2 bg-blue-800 p-2 rounded text-xs")}
+                className={cn(
+                  "text-white ml-2 bg-blue-800 p-2 rounded text-xs"
+                )}
                 text="Add to cart"
               />
             </div>
