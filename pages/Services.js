@@ -123,7 +123,7 @@ export default function Home(props) {
               <div className={cn("col-span-1 sm:pt-4")}>
                 <SolutionItam
                   title="UC &amp; Voice"
-                  description="unified communications and colaboration solutions to engage customers, empower your people and deliver a different CX"
+                  description="Unified communications and colaboration solutions to engage customers, empower your people and deliver a different CX"
                   tag="Lear more"
                 />
               </div>
