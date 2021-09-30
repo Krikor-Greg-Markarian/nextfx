@@ -6,11 +6,11 @@ import cn from "classnames";
 
 const PlanItem = (props) => {
   return (
-    <Card>
+    <Card className={cn("relative")}>
       <div className={cn("flex justify-center items-center")}>
         <div className={cn("small rounded-lg")}></div>
       </div>
-      <p className={cn("text-center pt-2")}>STANDARD</p>
+      <p className={cn("text-center pt-2")}>{props.title}</p>
       <div className={cn("flex justify-center items-center")}>
         <p className={cn("text-center text-2xl text-blue-900 font-bold ")}>
           {props.price}
@@ -37,6 +37,20 @@ const PlanItem = (props) => {
       <p className={cn("text-sm text-blue-900 font-bold underline")}>
         View Details
       </p>
+
+      {props.isBestValue ? (
+        <div className={cn("flex justify-center items-center")}>
+          <div
+            className={cn(
+              "text-sm bg-pink-600 text-white text-center rounded w-5/12 absolute -top-3"
+            )}
+          >
+            BEST VALUE
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </Card>
   );
 };
