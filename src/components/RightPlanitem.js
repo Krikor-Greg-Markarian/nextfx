@@ -2,16 +2,15 @@ import React from "react";
 import cn from "classnames";
 import Item from "./Item";
 import Button from "./Button";
-import { prop } from "dom7";
 
 function RightPlanitem(props) {
   const styleClasses = {
     planBackgroundColor: props.planBackgroundColor ?? "bg-white",
-    smallTextColor: "text-gray-500",
-    titleColor: "text-blue-900",
-    priceColor: "text-blue-800",
-    buttonBackgroundColor: "bg-gray-200",
-    buttonTextColor: "text-blue-600",
+    smallTextColor: props.smallTextColor ?? "text-gray-400",
+    titleColor: props.titleColor ?? "text-blue-900",
+    priceColor: props.priceColor ?? "text-blue-800",
+    buttonBackgroundColor: props.buttonBackgroundColor ?? "bg-gray-200",
+    buttonTextColor: props.buttonTextColor ?? "text-blue-600",
   };
 
   return (
@@ -23,7 +22,7 @@ function RightPlanitem(props) {
         <p className={cn("font-bold text-lg mb-0", styleClasses.titleColor)}>
           {props.title}
         </p>
-        <p className={cn("font-bold text-lg", styleClasses.price)}>
+        <p className={cn("font-bold text-lg", styleClasses.priceColor)}>
           {props.price}{" "}
           <sub className={cn("text-sm ", styleClasses.smallTextColor)}>
             {props.month}
@@ -36,7 +35,7 @@ function RightPlanitem(props) {
         <div className={cn("pt-3 flex justify-center items-center")}>
           <Button
             className={cn(
-              "text-center p-2 rounded w-9/12",
+              "text-center p-2 rounded w-9/12 text-sm",
               styleClasses.buttonBackgroundColor,
               styleClasses.buttonTextColor
             )}
