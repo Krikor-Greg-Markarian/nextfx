@@ -9,9 +9,12 @@ function RightPlanitem(props) {
     <div className={cn("bg-blue-100 rounded")}>
       <div className={cn("p-3")}>
         <p className={cn("text-sm font-bold")}>{props.smalltitle}</p>
-        <p className={cn("font-bold text-lg mb-0")}>{props.title}</p>
-        <p className={cn("font-bold")}>
-          {props.price} <span className={cn("text-sm")}>{props.month}</span>{" "}
+        <p className={cn("font-bold text-lg mb-0 text-blue-900")}>
+          {props.title}
+        </p>
+        <p className={cn("font-bold text-blue-800 text-lg")}>
+          {props.price}{" "}
+          <sub className={cn("text-sm text-gray-500")}>{props.month}</sub>{" "}
         </p>
 
         {props.item.map((item, idx) => (
