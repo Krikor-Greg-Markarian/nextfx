@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../styles/Card.module.css";
 import cn from "classnames";
+import Button from "./Button";
 
 const CardResume = (props) => {
   const renderMostPopular = () => {
@@ -17,7 +18,9 @@ const CardResume = (props) => {
     >
       {renderMostPopular()}
       {props.children}
-      <p className={cn("font-bold pb-4")}>Request a call back</p>
+      <p className={cn("font-bold text-blue-900 text-2xl mb-2")}>
+        Request a call back
+      </p>
       <p className={cn("text-sm text-gray-500")}>
         Were are commited to providing excellent service and creating a
         stress-free experience for our customers.
@@ -85,9 +88,12 @@ const CardResume = (props) => {
         </div>
       </div>
       <div className={cn("pt-4 pb-2")}>
-        <button className={cn("bg-blue-800 text-white text-sm p-2 w-full")}>
-          Submit
-        </button>
+        <Button
+          className={cn(
+            "bg-blue-800 text-white text-sm p-2 w-full rounded text-center"
+          )}
+          text="Submit request"
+        />
       </div>
     </div>
   );
