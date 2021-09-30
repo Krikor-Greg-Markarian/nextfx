@@ -47,6 +47,7 @@ function CUrrentJobItem(props) {
             city={item.city}
             time={item.time}
             button={item.button}
+            backgroundcolor={item.backgroundcolor}
           />
         ))}
       </div>
