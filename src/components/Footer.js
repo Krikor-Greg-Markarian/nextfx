@@ -141,7 +141,7 @@ function Footer() {
                 >
                   NetFx <span className={cn("pl-4")}>|</span>{" "}
                   <span className={cn("pl-4")}>
-                    Copyright &copy; 2020JWSTHEMES{" "}
+                    Copyright &copy; 2020JWSTHEMES.{" "}
                   </span>
                   <span className={cn("float-right pl-4 text-xs")}>
                     Sitemap
