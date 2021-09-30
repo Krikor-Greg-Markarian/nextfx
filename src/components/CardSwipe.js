@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "../../styles/Card.module.css";
 import cn from "classnames";
-import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import { FaCheck } from "react-icons/fa";
 
 const percentage = 66;
 const CardSwipe = (props) => {
