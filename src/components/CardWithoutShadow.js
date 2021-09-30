@@ -61,7 +61,6 @@ function CardWithoutShadow() {
         <div className={cn("pl-20 inline")}>
           <input type="radio" name="" id="" />
           <label htmlFor="" className={cn("pl-3")}>
-            {" "}
             Phone
           </label>
         </div>
