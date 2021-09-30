@@ -20,12 +20,16 @@ function ClientReview(props) {
           </p>
         </div>
       </div>
+      <div className={cn("pt-4")}>
+        <div className={cn("border-1 border-gray-300")}></div>
+      </div>
       <div className={cn("grid grid-cols-4 pt-6")}>
         <div className={cn("col-span-1")}>
           <div class="flex">
             <div class="flex-shrink">
               <div className={cn("small rounded-lg")}></div>
             </div>
+
             <div class="flex-shrink pl-1">
               <p className={cn("text-blue-900 text-sm font-bold pl-1")}>
                 Global News
