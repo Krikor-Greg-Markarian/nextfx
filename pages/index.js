@@ -246,6 +246,7 @@ export default function Home(props) {
                 <BestValueitem
                   title={"STANDARD"}
                   price={"$49.99"}
+                  isMostPopular = {false}
                   text={[
                     { text: "Free Google Voice Remote and DVR included" },
                     { text: "60+ HD Channels" },
@@ -258,6 +259,7 @@ export default function Home(props) {
                 <BestValueitem
                   title={"SILVER"}
                   price={"$74.99"}
+                  isMostPopular = {false}
                   text={[
                     { text: "Free Google Voice Remote and DVR included" },
                     { text: "110+ HD Channels" },
@@ -270,6 +272,7 @@ export default function Home(props) {
                 <BestValueitem
                   title={"GOLD"}
                   price={"$84.99"}
+                  isMostPopular = {true}
                   text={[
                     { text: "Free Google Voice Remote and DVR included" },
                     { text: "125+ HD Channels" },
@@ -282,6 +285,7 @@ export default function Home(props) {
                 <BestValueitem
                   title={"DIAMON"}
                   price={"$94.99"}
+                  isMostPopular = {false}
                   text={[
                     { text: "Free Google Voice Remote and DVR included" },
                     { text: "140+ HD Channels" },
