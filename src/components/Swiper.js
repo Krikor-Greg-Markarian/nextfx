@@ -26,7 +26,7 @@ export default () => {
       onSlideChange={() => console.log("slide change")}
     >
       <SwiperSlide>
-        <CardSwipe title="Iphone 11" price="$699.00" />
+        <CardSwipe title="Iphone 11" price="$699.00" addtocart={true} />
       </SwiperSlide>
       <SwiperSlide>
         <CardSwipe title="iphone XS Max" price="$499.00" />{" "}
