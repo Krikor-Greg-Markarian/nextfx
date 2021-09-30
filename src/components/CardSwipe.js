@@ -32,9 +32,11 @@ const CardSwipe = (props) => {
           </div>
         </div>
         <p className={cn("font-bold text-sm text-center pt-4 mb-0")}>
-          Iphone 11
+          {props.title}
         </p>
-        <p className={cn("text-sm text-gray-500 text-center pb-4")}>$699.00</p>
+        <p className={cn("text-sm text-gray-500 text-center pb-4")}>
+          {props.price}
+        </p>
       </div>
     </div>
   );
