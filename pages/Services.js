@@ -304,7 +304,7 @@ export default function Home(props) {
           <span className={cn("inline text-sm pl-20")}>Billed monthly</span>
         </div>
         <div className={cn("container mx-auto pt-3")}>
-          <div className={cn("md:grid grid-cols-3 gap-4")}>
+          <div className={cn("grid md:grid-cols-3 gap-4")}>
             <div className={cn("col-span-1")}>
               <RightPlanitem
                 smalltitle="Personal"
@@ -442,7 +442,7 @@ export default function Home(props) {
       <section className={cn("pt-12 pb-12")}>
         <div className={cn("bg-white")}>
           <div className={cn("container mx-auto")}>
-            <div className={cn("grid grid-cols-3")}>
+            <div className={cn("grid md:grid-cols-3")}>
               <div className={cn("col-span-2 pt-12")}>
                 <CardWithoutShadow />
               </div>
