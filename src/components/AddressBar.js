@@ -1,5 +1,6 @@
 import React from "react";
 import cn from "classnames";
+import Button from "./Button";
 
 function AddressBar() {
   return (
@@ -41,9 +42,10 @@ function AddressBar() {
                   />
                 </div>
                 <div className={cn("col-span-1")}>
-                  <button className={cn("bg-blue-700 text-sm p-2")}>
-                    Check Availibility
-                  </button>
+                  <Button
+                    className={cn("bg-blue-300 text-sm p-2")}
+                    text="Check Availability"
+                  />
                 </div>
               </div>
             </div>
