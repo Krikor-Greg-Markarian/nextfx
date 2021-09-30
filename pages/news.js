@@ -57,6 +57,7 @@ export default function Home(props) {
               city: "New York",
               time: "Full time",
               button: "Apply now",
+              backgroundcolor: "bg-blue-100",
             },
             {
               title: "Technical Support",
@@ -69,6 +70,7 @@ export default function Home(props) {
               city: "New York",
               time: "Full time",
               button: "Apply now",
+              backgroundcolor: "bg-blue-100",
             },
           ]}
         />
