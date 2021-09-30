@@ -376,16 +376,64 @@ export default function Home(props) {
             )}
           >
             <div className={cn("col-span-1")}>
-              <Cardwithimages />
+              <Cardwithimages
+                title="STANDARD"
+                price="$49.99"
+                mo="/mo"
+                isMostPopular={false}
+                isBestValue={false}
+                select={[
+                  { text: "Free Google Voice Remote and DVR included" },
+                  { text: "60+ HD Channels" },
+                  { text: "Local Channels" },
+                  { text: "190 Channels" },
+                ]}
+              />
             </div>
             <div className={cn("col-span-1")}>
-              <Cardwithimages />
+              <Cardwithimages
+                title="SILVER"
+                price="$74.99"
+                mo="/mo"
+                isMostPopular={false}
+                isBestValue={false}
+                select={[
+                  { text: "Free Google Voice Remote and DVR included" },
+                  { text: "110+ HD Channels" },
+                  { text: "Local Channels" },
+                  { text: "190+ Channels" },
+                ]}
+              />
             </div>
             <div className={cn("col-span-1")}>
-              <Cardwithimages />
+              <Cardwithimages
+                title="GOLD"
+                price="$84.99"
+                mo="/mo"
+                isMostPopular={true}
+                isBestValue={false}
+                select={[
+                  { text: "Free Google Voice Remote and DVR included" },
+                  { text: "125+ HD Channels" },
+                  { text: "Local Channels" },
+                  { text: "240+ Channels" },
+                ]}
+              />
             </div>
             <div className={cn("col-span-1")}>
-              <Cardwithimages />
+              <Cardwithimages
+                title="DIAMOND"
+                price="$94.99"
+                mo="/mo"
+                isMostPopular={false}
+                isBestValue={true}
+                select={[
+                  { text: "Free Google Voice Remote and DVR included" },
+                  { text: "140+ HD Channels" },
+                  { text: "Local Channels" },
+                  { text: "290+ Channels" },
+                ]}
+              />
             </div>
           </div>
         </div>
