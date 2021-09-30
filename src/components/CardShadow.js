@@ -8,7 +8,7 @@ function CardShadow(props) {
     <div
       className={cn(
         "p-4 rounded-lg border-t-4 border-blue-300",
-        styles.mainContainer
+        styles.mainContainer, props.className
       )}
     >
       {props.children}
