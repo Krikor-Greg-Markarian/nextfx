@@ -7,7 +7,7 @@ const Item = (props) => {
       <div class="flex-shrink pt-2 text-blue-300">
         {props.icon ?? <FaCheck />}
       </div>
-      <div class="flex-shrink text-sm text-gray-500 pl-3 pt-2">
+      <div class="flex-shrink text-sm text-gray-400 pl-3 pt-2">
         {props.text}
       </div>
     </div>
