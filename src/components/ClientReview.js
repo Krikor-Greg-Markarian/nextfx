@@ -52,7 +52,7 @@ function ClientReview(props) {
 </div>
      </div>
      <div className = {cn("col-span-1 pl-6")}>
-     <div className = {cn("bg-blue-300 rounded-full w-11 h-11 relative font-bold p-2 text-center")}>One <div className = {cn("bg-blue-800 rounded-full w-6 h-6 absolute text-xs -top-1 left-9 p-1 text-white text-center")}>TV</div></div>
+     <div className = {cn("bg-blue-300 rounded-full w-11 h-11 relative font-bold p-2 text-center text-white")}>One <div className = {cn("bg-blue-800 rounded-full w-6 h-6 absolute text-xs -top-1 left-9 p-1 text-white text-center")}>TV</div></div>
      </div>
    </div>
 
