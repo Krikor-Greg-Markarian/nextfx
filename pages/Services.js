@@ -164,9 +164,11 @@ export default function Home(props) {
           >
             <div className={cn("col-span-1")}>
               <PlanItem
+                title={"STANDARD"}
                 price={"$49"}
                 sup={"99"}
                 mo={"/mo"}
+                isBestValue={false}
                 includes={[
                   { text: "FREE no-Contact installation" },
                   { text: "30-Day Money-Back Guarantee" },
@@ -182,9 +184,11 @@ export default function Home(props) {
             </div>
             <div className={cn("col-span-1")}>
               <PlanItem
+                title={"SILVER"}
                 price={"$74"}
                 sup={"99"}
                 mo={"/mo"}
+                isBestValue={false}
                 includes={[
                   { text: "FREE no-Contact installation" },
                   { text: "30-Day Money-Back Guarantee" },
@@ -200,9 +204,11 @@ export default function Home(props) {
             </div>
             <div className={cn("col-span-1")}>
               <PlanItem
+                title={"GOLD"}
                 price={"$84"}
                 sup={"99"}
                 mo={"/mo"}
+                isBestValue={false}
                 includes={[
                   { text: "FREE no-Contact installation" },
                   { text: "30-Day Money-Back Guarantee" },
@@ -218,9 +224,11 @@ export default function Home(props) {
             </div>
             <div className={cn("col-span-1")}>
               <PlanItem
+                title={"DIAMOND"}
                 price={"$94"}
                 sup={"99"}
                 mo={"/mo"}
+                isBestValue={true}
                 includes={[
                   { text: "FREE no-Contact installation" },
                   { text: "30-Day Money-Back Guarantee" },
