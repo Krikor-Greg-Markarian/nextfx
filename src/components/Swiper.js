@@ -26,16 +26,16 @@ export default () => {
       onSlideChange={() => console.log("slide change")}
     >
       <SwiperSlide>
-        <CardSwipe />
+        <CardSwipe title="Iphone 11" price="$699.00" />
       </SwiperSlide>
       <SwiperSlide>
-        <CardSwipe />{" "}
+        <CardSwipe title="iphone XS Max" price="$499.00" />{" "}
       </SwiperSlide>
       <SwiperSlide>
-        <CardSwipe />{" "}
+        <CardSwipe title="Samsung Galaxy S20" price="$699.99.00" />{" "}
       </SwiperSlide>
       <SwiperSlide>
-        <CardSwipe />{" "}
+        <CardSwipe title="Iphone 11 pro" price="$999.99.00" />{" "}
       </SwiperSlide>
       <SwiperSlide>Slide 5</SwiperSlide>
       <SwiperSlide>Slide 6</SwiperSlide>
