@@ -9,7 +9,7 @@ function FiberConnection() {
           <div className="grid grid-cols-2">
             <div className="col-span-1">
               <div className={cn("pt-12")}>
-                <p className={cn("text-blue-800 font-bold")}>
+                <p className={cn("text-blue-300 font-bold")}>
                   FREE{" "}
                   <span className={cn("text-white font-bold")}>
                     {" "}
