@@ -111,7 +111,7 @@ function Navbar(props) {
                         </Link>
                       </li>
                       <li className={cn("text-sm list-none inline pl-2")}>
-                        <Link className={cn("no-underline")} href="/home">
+                        <Link className={cn("no-underline")} href="/">
                           <a className={cn("no-underline")}>Contacts</a>
                         </Link>
                       </li>
