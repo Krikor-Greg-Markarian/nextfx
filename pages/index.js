@@ -1,27 +1,22 @@
 import axios from "axios";
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
-import Card from "../src/components/Card";
 import cn from "classnames";
 import QuestionAnswer from "../src/components/QuestionAnswer";
 import AddressBar from "../src/components/AddressBar";
 import FastestSpeed from "../src/components/FastestSpeed";
 import InternetProvider from "../src/components/InternetProvider";
-import Unlimited from "../src/components/Unlimited";
 import SmallBoxes from "../src/components/SmallBoxes";
 import TextImg from "../src/components/TextImg";
 import Swiper from "../src/components/Swiper";
 import { FaCheck } from "react-icons/fa";
-import RecCard from "../src/components/RecCard";
 import ClientReview from "../src/components/ClientReview";
 import ResumeCardRadio from "../src/components/ResumeCardRadio";
 import NavbarText from "../src/components/NavbarText";
 import Button from "../src/components/Button";
 import Experienceitem from "../src/components/Experienceitem";
-import CardShadowRec from "../src/components/CardShadowRec";
 import BestValueitem from "../src/components/BestValueitem";
-
-// import { CircularProgressbar } from 'react-circular-progressbar';
+import Item from "../src/components/Item";
 
 const netFx = [
   {
@@ -57,6 +52,26 @@ const channel = [
   {
     channel: "370+",
     available: "Available Channels",
+  },
+  {
+    channel: "32",
+    available: "Covered States",
+  },
+  {
+    channel: "125k",
+    available: "Happy Clients",
+  },
+];
+
+const tvExp = [
+  {
+    text: "The speed you need at a price you'll love-with plans up to 100Mbps*",
+  },
+  {
+    text: "The bandwidth to power multiple devices at once",
+  },
+  {
+    text: "Seamless streaming,working, and gaming",
   },
 ];
 
@@ -117,25 +132,10 @@ export default function Home(props) {
                 we've streamlined our plans to give you the fastest internet
                 available at your address for one low monthly price.
               </p>
-              <div>
-                <FaCheck className={cn("inline")} />
-                <p className={cn("text-gray-500 text-sm inline pl-4")}>
-                  The speed you need at a price you'll love-with plans up to
-                  100Mbps*
-                </p>
-              </div>
-              <div className={cn("pt-3")}>
-                <FaCheck className={cn("inline")} />
-                <p className={cn("text-gray-500 text-sm inline pl-4")}>
-                  The bandwidth to power multiple devices at once
-                </p>
-              </div>
-              <div className={cn("pt-3")}>
-                <FaCheck className={cn("inline")} />
-                <p className={cn("text-gray-500 text-sm inline pl-4")}>
-                  Seamless streaming,working, and gaming
-                </p>
-              </div>
+
+              {tvExp.map((item, idx) => (
+                <Item text={item.text} />
+              ))}
             </div>
           </div>
         </div>
