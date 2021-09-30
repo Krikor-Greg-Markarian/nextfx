@@ -23,16 +23,16 @@ const netFx = [
     description: "High-Speed internet access that is always on & fast.",
   },
   {
-    title: "Wifi internet",
-    description: "High-Speed internet access that is always on & fast.",
+    title: "Mobile connection",
+    description: "Use our router to stay online on all your devices.",
   },
   {
-    title: "Wifi internet",
-    description: "High-Speed internet access that is always on & fast.",
+    title: "TV box",
+    description: "200+ entertainment channels for different age groups.",
   },
   {
-    title: "Wifi internet",
-    description: "High-Speed internet access that is always on & fast.",
+    title: "Smart home",
+    description: "NetFx provides extra loT for all your devices.",
   },
 ];
 
