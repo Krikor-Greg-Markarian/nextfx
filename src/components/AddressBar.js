@@ -20,16 +20,17 @@ function AddressBar() {
                     name=""
                     id=""
                     placeholder="Street address"
-                    className={cn("p-1 w-full")}
+                    className={cn("p-1 w-full rounded")}
                   />
                 </div>
+
                 <div className={cn("col-span-1")}>
                   <input
                     type="text"
                     name=""
                     id=""
                     placeholder="Apt/unit"
-                    className={cn("p-1 w-full")}
+                    className={cn("p-1 w-full rounded")}
                   />
                 </div>
                 <div className={cn("col-span-1")}>
@@ -38,12 +39,12 @@ function AddressBar() {
                     name=""
                     id=""
                     placeholder="Enter zipcode"
-                    className={cn("p-1 w-full")}
+                    className={cn("p-1 w-full rounded")}
                   />
                 </div>
                 <div className={cn("col-span-1")}>
                   <Button
-                    className={cn("bg-blue-300 text-sm p-2")}
+                    className={cn("bg-blue-300 text-sm p-2 rounded")}
                     text="Check Availability"
                   />
                 </div>
