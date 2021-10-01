@@ -48,9 +48,7 @@ const PlanItem = (props) => {
             BEST VALUE
           </div>
         </div>
-      ) : (
-        ""
-      )}
+      ) : null}
     </Card>
   );
 };
