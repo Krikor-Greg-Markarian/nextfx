@@ -25,7 +25,7 @@ function BestValueitem(props) {
         <sub className={cn("inline")}>/mo</sub>
       </div>
       {props.text.map((item, idx) => (
-        <Item text={item.text} />
+        <Item text={item.text} key={idx} />
       ))}
       <div className={cn("flex justify-center items-center pt-3 pb-3")}>
         <Button
