@@ -9,6 +9,7 @@ import {
   FaPhone,
   FaMailBulk,
 } from "react-icons/fa";
+import Button from "./Button";
 
 function Footer() {
   return (
@@ -25,9 +26,14 @@ function Footer() {
               <p className={cn("text-sm text-white pt-2 pb-2 text-center")}>
                 Get a price you'll love and the reliability you deserve
               </p>
-              <button className={cn("bg-white text-blue-700 p-2 rounded")}>
-                Let's get started
-              </button>
+              <div className={cn("flex justify-center items-center")}>
+                <Button
+                  className={cn(
+                    "bg-white text-sm rounded text-blue-300 text-center p-2 w-2/12"
+                  )}
+                  text="Let's get started "
+                />
+              </div>
             </div>
           </div>
         </div>
