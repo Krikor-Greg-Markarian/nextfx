@@ -133,7 +133,7 @@ export default function Home(props) {
               </p>
 
               {tvExp.map((item, idx) => (
-                <Item text={item.text} />
+                <Item text={item.text} key={idx} />
               ))}
             </div>
           </div>
@@ -244,6 +244,7 @@ export default function Home(props) {
             >
               <div className={cn("sm:pb-2 col-span-1")}>
                 <BestValueitem
+                  
                   title={"STANDARD"}
                   price={"$49.99"}
                   isMostPopular={false}
@@ -257,6 +258,7 @@ export default function Home(props) {
               </div>
               <div className={cn("sm:pb-2 col-span-1")}>
                 <BestValueitem
+                
                   title={"SILVER"}
                   price={"$74.99"}
                   isMostPopular={false}
