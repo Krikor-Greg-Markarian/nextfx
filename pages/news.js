@@ -99,11 +99,11 @@ export default function Home(props) {
                 available at your address for one low monthly price.
               </p>
 
-              <div class="flex">
-                <div class="flex-srink">
+              <div className="flex">
+                <div className="flex-srink">
                   <FaCheck />
                 </div>
-                <div class="flex-shrink ">
+                <div className="flex-shrink ">
                   <p
                     className={cn("font-bold text-blue-800 text-sm mb-0 pl-2")}
                   >
@@ -115,11 +115,11 @@ export default function Home(props) {
                   </p>
                 </div>
               </div>
-              <div class="flex">
-                <div class="flex-srink">
+              <div className="flex">
+                <div className="flex-srink">
                   <FaCheck />
                 </div>
-                <div class="flex-shrink ">
+                <div className="flex-shrink ">
                   <p
                     className={cn("font-bold text-blue-800 text-sm mb-0 pl-2")}
                   >
@@ -131,11 +131,11 @@ export default function Home(props) {
                   </p>
                 </div>
               </div>
-              <div class="flex">
-                <div class="flex-srink">
+              <div className="flex">
+                <div className="flex-srink">
                   <FaCheck />
                 </div>
-                <div class="flex-shrink ">
+                <div className="flex-shrink ">
                   <p
                     className={cn("font-bold text-blue-800 text-sm mb-0 pl-2")}
                   >
