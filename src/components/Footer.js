@@ -39,12 +39,13 @@ function Footer() {
         </div>
         <div className={cn("bg-gray-200 ")}>
           <div className={cn("container mx-auto pt-24")}>
-            <div className={cn("grid grid-cols-6 pt-4")}>
-              <div className={cn("col-span-2  ")}>
+            <div className={cn("grid sm:grid-cols-7 pt-4")}>
+              <div className={cn("col-span-3 ")}>
                 <p className={cn("font-bold text-blue-800")}>About company</p>
                 <p className={cn("text-xs pt-4 text-gray-500 ")}>
-                  we're developing the ultimate communications network to power
-                  high-quality, secure,affordable, fast connections.
+                  we're developing the ultimate communications <br></br> network
+                  to power high-quality, secure,affordable,<br></br>fast
+                  connections.
                 </p>
                 <div className={cn("pt-4")}>
                   <FaFacebook className={cn("inline")} />
@@ -53,7 +54,7 @@ function Footer() {
                   <FaInstagram className={cn("inline ml-3")} />
                 </div>
               </div>
-              <div className={cn("col-span-2 pl-20")}>
+              <div className={cn("col-span-2")}>
                 <p className={cn("font-bold text-blue-800")}>Contacts</p>
                 <div className="flex pt-4">
                   <div className="flex-shrink ">
@@ -81,7 +82,7 @@ function Footer() {
                 </div>
               </div>
 
-              <div className={cn("pl-8")}>
+              <div className={cn("col-span-1 pl-8")}>
                 <p className={cn("font-bold text-blue-800")}>Navigation</p>
                 <li className={cn("text-xs list-none")}>
                   <a className={cn("no-underline text-gray-500")} href="#">
@@ -109,7 +110,7 @@ function Footer() {
                   </a>
                 </li>
               </div>
-              <div className={cn("pl-7")}>
+              <div className={cn("col-span-1 pl-7")}>
                 <p className={cn("font-bold text-blue-800")}>Quick links</p>
                 <li className={cn("text-xs list-none")}>
                   <a className={cn("no-underline text-gray-500")} href="#">
