@@ -52,10 +52,10 @@ const Card = (props) => {
         <div className={cn("flex justify-center items-center")}>
           <div
             className={cn(
-              "bg-blue-900 text-white text-center rounded text-sm w-5/12 p-1 absolute -top-4"
+              "bg-blue-900 text-white text-center rounded text-xs w-5/12 p-1 absolute -top-4"
             )}
           >
-            Most Popular
+            MOST POPULAR
           </div>
         </div>
       ) : (
@@ -65,7 +65,7 @@ const Card = (props) => {
         <div className={cn("flex justify-center items-center")}>
           <div
             className={cn(
-              "bg-blue-900 text-white text-center rounded text-sm w-5/12 p-1 absolute -top-4"
+              "bg-blue-900 text-white text-center rounded text-xs w-5/12 p-1 absolute -top-4"
             )}
           >
             BEST VALUE
