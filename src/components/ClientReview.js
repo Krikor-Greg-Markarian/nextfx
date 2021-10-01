@@ -9,11 +9,11 @@ function ClientReview(props) {
       <p className={cn("text-sm text-gray-500 pt-2 pb-2")}>
         {props.description}
       </p>
-      <div class="flex">
-        <div class="flex-shrink">
+      <div className="flex">
+        <div className="flex-shrink">
           <div className={cn("small rounded-full")}></div>
         </div>
-        <div class="flex-shrink pl-2">
+        <div className="flex-shrink pl-2">
           <p className={cn("font-bold text-sm mb-0")}>{props.name}</p>
           <p className={cn("text-gray-500 text-sm inline")}>
             {props.location} <span className={cn("pl-5")}>*****</span>{" "}
@@ -25,12 +25,12 @@ function ClientReview(props) {
       </div>
       <div className={cn("grid grid-cols-4 pt-6")}>
         <div className={cn("col-span-1")}>
-          <div class="flex">
-            <div class="flex-shrink">
+          <div className="flex">
+            <div className="flex-shrink">
               <div className={cn("small rounded-lg")}></div>
             </div>
 
-            <div class="flex-shrink pl-1">
+            <div className="flex-shrink pl-1">
               <p className={cn("text-blue-900 text-sm font-bold pl-1")}>
                 Global News
               </p>
@@ -56,8 +56,8 @@ function ClientReview(props) {
         </div>
 
         <div className={cn("col-span-1")}>
-          <div class="flex">
-            <div class="flex-shrink pl-6">
+          <div className="flex">
+            <div className="flex-shrink pl-6">
               <p className={cn("text-blue-900 text-sm font-bold mb-0")}>
                 N E W S
               </p>
