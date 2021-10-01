@@ -26,12 +26,12 @@ const PlanItem = (props) => {
         Offer includes:
       </p>
       {props.includes.map((item, idx) => (
-        <Item text={item.text} />
+        <Item text={item.text} key={idx} />
       ))}
       <hr />
       <p className={cn("text-sm font-bold text-blue-900")}>Add-ons:</p>
       {props.addons.map((item, idx) => (
-        <Item text={item.text} />
+        <Item text={item.text} key={idx} />
       ))}
       <hr />
       <p className={cn("text-sm text-blue-900 font-bold underline")}>

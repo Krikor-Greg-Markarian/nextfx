@@ -83,8 +83,8 @@ function Navbar(props) {
                   </div>
                 </div>
                 <div>
-                  <div class="flex border-1">
-                    <div class="flex-grow bg-white p-1 pt-2">
+                  <div className="flex border-1">
+                    <div className="flex-grow bg-white p-1 pt-2">
                       <li className={cn("text-sm list-none inline")}>
                         <Link className={cn("no-underline")} href="/">
                           <a className={cn("no-underline")}>Home</a>
@@ -116,15 +116,15 @@ function Navbar(props) {
                         </Link>
                       </li>
                     </div>
-                    <div class="flex-shrink pt-3 bg-white"></div>
-                    <div class="flex-grow bg-blue-800 p-1">
+                    <div className="flex-shrink pt-3 bg-white"></div>
+                    <div className="flex-grow bg-blue-800 p-1">
                       <div>
-                        <div class="flex">
-                          <div class="flex-grow  pt-3">
+                        <div className="flex">
+                          <div className="flex-grow  pt-3">
                             <AiFillPhone />
                             <div></div>
                           </div>
-                          <div class="flex-shrink  ">
+                          <div className="flex-shrink  ">
                             <p className={cn("text-sm text-gray-500 mb-0")}>
                               call us now
                             </p>
