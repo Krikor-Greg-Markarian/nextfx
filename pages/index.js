@@ -100,14 +100,14 @@ export default function Home(props) {
                 />
               </div>
             </div>
-            <div className={cn("col-span-1 pt-12 sm:pt-16")}>
+            <div className={cn("col-span-1 pt-12 ")}>
               <QuestionAnswer />
             </div>
           </div>
         </div>
       </section>
 
-      <section className={cn("sm:pb-8 md:pb-0 lg:pb-0")}>
+      <section className={cn("sm:pb-8 md:pb-0 lg:pb-0 sm:mt-20")}>
         <InternetProvider
           title="Your Local High Speed internet Provider"
           description="NetFx is an award winning high speed internet provider offering reliable and affordable internet services in NYC, with gigabit internet speeds up to 940* Mbps."
@@ -144,7 +144,7 @@ export default function Home(props) {
         <div className={cn("bg-gray-200 py-12")}>
           <div className={cn("container mx-auto")}>
             <p className={cn("text-sm text-blue-800 mb-0")}>What We Do?</p>
-            <div className={cn("grid grid-cols-2")}>
+            <div className={cn("grid md:grid-cols-2")}>
               <div className={cn("col-span-1")}>
                 <p className={cn("text-2xl font-bold text-blue-900")}>
                   Experience the NetFx unlimited possibilities
@@ -186,9 +186,9 @@ export default function Home(props) {
       <section className={cn("w-10/12 p-12")}>
         <div className={cn("bg-white")}>
           <div className={cn("container mx-auto")}>
-            <div className={cn("grid grid-cols-3")}>
+            <div className={cn("grid md:grid-cols-3")}>
               <div className={cn("col-span-2")}>
-                <div className={cn("grid grid-cols-2 gap-4")}>
+                <div className={cn("grid md:grid-cols-2 gap-4")}>
                   <div className={cn("col-span-2")}>
                     <p className={cn("text-blue-800 text-sm mb-0")}>
                       Why Choose us
@@ -323,7 +323,7 @@ export default function Home(props) {
       </section>
 
       <section className={cn("pt-20 ")}>
-        <div className={cn("container mx-auto ")}>
+        <div className={cn("container mx-auto sm:pt-96 md:pt-0")}>
           <p className={cn("text-sm text-blue-700 text-center mb-0")}>
             Phone and devices
           </p>
