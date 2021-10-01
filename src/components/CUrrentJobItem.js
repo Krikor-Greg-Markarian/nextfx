@@ -43,6 +43,7 @@ function CUrrentJobItem(props) {
 
         {props.select.map((item, idx) => (
           <JobOpening
+            key={idx}
             title={item.title}
             city={item.city}
             time={item.time}
