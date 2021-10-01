@@ -87,7 +87,7 @@ export default function Home(props) {
 
       <section>
         <div className={cn("container mx-auto")}>
-          <div className={cn("grid grid-cols-2")}>
+          <div className={cn("grid sm:grid-cols-1 md:grid-cols-2")}>
             <div className={cn("col-span-1 w-10/12")}>
               <p className={cn("text-sm text-blue-700 pt-12 mb-0")}>
                 Join our team!
