@@ -6,7 +6,7 @@ function TextImg(props) {
     <div>
       <div>
         <p className={cn("text-sm text-gray-400")}>{props.title}</p>
-        <div className={cn("new w-full")}></div>
+        <img src={props.imageUrl} alt="" />
       </div>
     </div>
   );
