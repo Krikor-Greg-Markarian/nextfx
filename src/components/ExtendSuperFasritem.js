@@ -1,5 +1,6 @@
 import React from "react";
 import cn from "classnames";
+import Button from "./Button";
 
 function ExtendSuperFasritem(props) {
   return (
@@ -29,9 +30,12 @@ function ExtendSuperFasritem(props) {
                   {props.tagb}
                 </li>
                 <div className={cn("pt-4")}>
-                  <button className={cn("bg-blue-700 text-white p-2 rounded")}>
-                    Customize order
-                  </button>
+                  <Button
+                    className={cn(
+                      "text-center rounded bg-blue-800 text-white text-sm p-2 w-5/12 "
+                    )}
+                    text="customize order"
+                  />
                 </div>
               </div>
             </div>
