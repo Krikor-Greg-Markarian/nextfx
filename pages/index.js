@@ -21,18 +21,26 @@ const netFx = [
   {
     title: "Wifi internet",
     description: "High-Speed internet access that is always on & fast.",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2017/03/28/22/55/night-photograph-2183637__340.jpg",
   },
   {
     title: "Mobile connection",
     description: "Use our router to stay online on all your devices.",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2021/09/17/15/17/fruit-6633086__340.jpg",
   },
   {
     title: "TV box",
     description: "200+ entertainment channels for different age groups.",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2021/09/20/06/55/spaghetti-6639970__340.jpg",
   },
   {
     title: "Smart home",
     description: "NetFx provides extra loT for all your devices.",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2020/12/29/23/08/horses-5871847__340.jpg",
   },
 ];
 
@@ -40,10 +48,14 @@ const favorite = [
   {
     title:
       "Streaming TV gives you instant access to all your favorite Live channels and OnDemand video at a low Price. Best of all, there are no hidden fees, equipment rentals or contracts. Stream all of your favorite shows, surf the web",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2021/09/20/21/32/lake-6641880__340.jpg",
   },
   {
     title:
       "We've streamlined our plans to give you the fastest internet available at your address for one low monthly price. TV you want, when you want it. Enjoy your favorite shows and movies on your own schedule.",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2021/09/17/15/17/fruit-6633086__340.jpg",
   },
 ];
 
@@ -51,14 +63,20 @@ const channel = [
   {
     channel: "370+",
     available: "Available Channels",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2021/08/31/18/51/forest-6589852__340.jpg",
   },
   {
     channel: "32",
     available: "Covered States",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2021/08/22/11/09/stream-6564840__340.jpg",
   },
   {
     channel: "125k",
     available: "Happy Clients",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2021/09/25/10/08/road-6654573__340.jpg",
   },
 ];
 
@@ -165,6 +183,7 @@ export default function Home(props) {
                     key={idx}
                     title={item.title}
                     description={item.description}
+                    imageUrl={item.imageUrl}
                   />
                 </div>
               ))}
@@ -201,7 +220,11 @@ export default function Home(props) {
 
                   {favorite.map((item, idx) => (
                     <div className={cn("col-span-1")}>
-                      <TextImg key={idx} title={item.title} />
+                      <TextImg
+                        key={idx}
+                        title={item.title}
+                        imageUrl={item.imageUrl}
+                      />
                     </div>
                   ))}
                 </div>
@@ -212,6 +235,7 @@ export default function Home(props) {
                     key={idx}
                     channel={item.channel}
                     available={item.available}
+                    imageUrl={item.imageUrl}
                   />
                 ))}
               </div>
@@ -244,6 +268,7 @@ export default function Home(props) {
             >
               <div className={cn("sm:pb-2 col-span-1")}>
                 <BestValueitem
+                  buttonText={"asddsds"}
                   title={"STANDARD"}
                   price={"$49.99"}
                   isMostPopular={false}
