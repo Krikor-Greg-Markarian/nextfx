@@ -49,24 +49,24 @@ function Footer() {
               </div>
               <div className={cn("col-span-2 pl-20")}>
                 <p className={cn("font-bold text-blue-800")}>Contacts</p>
-                <div classname="flex pt-4">
-                  <div classname="flex-shrink ">
+                <div className="flex pt-4">
+                  <div className="flex-shrink ">
                     <FaLocationArrow className={cn("inline text-blue-800 ")} />
                     <p className={cn("text-xs inline text-gray-500 pl-1")}>
                       5002 Examples Street Los Angeles, CA 90034
                     </p>
                   </div>
                 </div>
-                <div classname="flex pt-4">
-                  <div classname="flex-shrink ">
+                <div className="flex pt-4">
+                  <div className="flex-shrink ">
                     <FaPhone className={cn("inline text-blue-800")} />
                     <p className={cn("text-xs inline text-gray-500 pl-1")}>
                       example@company.com
                     </p>
                   </div>
                 </div>
-                <div classname="flex pt-4">
-                  <div classname="flex-shrink ">
+                <div className="flex pt-4">
+                  <div className="flex-shrink ">
                     <FaMailBulk className={cn("inline text-blue-800")} />
                     <p className={cn("text-xs inline text-gray-500 pl-1")}>
                       012-2453-6353
