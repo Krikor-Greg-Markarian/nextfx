@@ -146,7 +146,7 @@ export default function Home(props) {
             <p className={cn("text-sm text-blue-800 mb-0")}>What We Do?</p>
             <div className={cn("grid grid-cols-2")}>
               <div className={cn("col-span-1")}>
-                <p className={cn("text-2xl font-bold")}>
+                <p className={cn("text-2xl font-bold text-blue-900")}>
                   Experience the NetFx unlimited possibilities
                 </p>
               </div>
@@ -244,7 +244,6 @@ export default function Home(props) {
             >
               <div className={cn("sm:pb-2 col-span-1")}>
                 <BestValueitem
-                  
                   title={"STANDARD"}
                   price={"$49.99"}
                   isMostPopular={false}
@@ -258,7 +257,6 @@ export default function Home(props) {
               </div>
               <div className={cn("sm:pb-2 col-span-1")}>
                 <BestValueitem
-                
                   title={"SILVER"}
                   price={"$74.99"}
                   isMostPopular={false}
