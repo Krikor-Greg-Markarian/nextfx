@@ -17,7 +17,9 @@ const Card = (props) => {
     >
       {renderMostPopular()}
       {props.children}
-      <p className={cn("font-bold pb-4")}>Submit your resume</p>
+      <p className={cn("font-bold pb-4 text-2xl mb-0 text-blue-900")}>
+        Submit your resume
+      </p>
       <div className={cn("inline ")}>
         <input
           type="text"
@@ -77,7 +79,9 @@ const Card = (props) => {
         </p>
       </div>
       <div className={cn("pt-2")}>
-        <button className={cn("bg-blue-800 text-white text-sm p-2 w-full")}>
+        <button
+          className={cn("bg-blue-800 text-white text-sm p-2 w-full rounded")}
+        >
           Submit
         </button>
       </div>
