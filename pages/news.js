@@ -79,16 +79,9 @@ export default function Home(props) {
       </section>
 
       <section className={cn("pt-10 pb-10 ")}>
-        {/* <Item
-          text="we're here to support you."
-          subtitle="We've streamlined our plans to give you the fastest internet available at your address for one low monthly price."
-          button="our support center"
-        ></Item> */}
-        <Supportitem 
-          title = "We're here to support you."
-          description = "We've streamlined our plans to give you the fastest internet available at your address for one low monthly price."
-          
-
+        <Supportitem
+          title="We're here to support you."
+          description="We've streamlined our plans to give you the fastest internet available at your address for one low monthly price."
         />
       </section>
 
