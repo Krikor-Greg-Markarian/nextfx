@@ -32,7 +32,7 @@ function BestValueitem(props) {
           className={cn(
             " pt-2 bg-blue-800 text-center text-white p-2 text-sm rounded w-8/12"
           )}
-          text="Get started"
+          text={props.buttonText ?? "get started"}
         />
       </div>
       <p className={cn("text-sm text-blue-800 text-center underline")}>
