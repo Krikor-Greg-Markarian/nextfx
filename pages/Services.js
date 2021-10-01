@@ -13,6 +13,7 @@ import PlanItem from "../src/components/PlanItem";
 import BestValueitem from "../src/components/BestValueitem";
 import SolutionItam from "../src/components/SolutionItam";
 import RightPlanitem from "../src/components/RightPlanitem";
+import ExtendSuperFasritem from "../src/components/ExtendSuperFasritem";
 
 export default function Home(props) {
   return (
@@ -247,45 +248,18 @@ export default function Home(props) {
       </section>
 
       <section>
-        <div className={cn("pt-16 pb-16")}>
-          <div className={cn("stars")}>
-            <div className={cn("container mx-auto ")}>
-              <div className={"grid grid-cols-2"}>
-                <div className={cn("col-span-1 w-12/12 pl-16 py-8")}>
-                  <p className={cn("font-bold text-blue-900 text-2xl")}>
-                    Extend your super-fast internet to reach every corner of
-                    your home.
-                  </p>
-                  <p className={cn("text-gray-500 text-sm")}>
-                    Whole-Home Wifi, Powered by NetFx, eliminates dead and gives
-                    you the coverage you need with the best home Wifi solution
-                    around.
-                  </p>
-                  <p className={cn("text-2xl text-blue-900 font-bold inline")}>
-                    $69.99
-                  </p>
-                  <sub className={cn("text-gray-500 text-sm")}>/mo</sub>
-                  <li className={cn("text-sm text-gray-500 pt-3")}>
-                    Great for several devices being used similtaneously.
-                  </li>
-                  <li className={cn("text-sm text-gray-500 pt-2")}>
-                    Perfect for households with 1-3 users.
-                  </li>
-                  <li className={cn("text-sm text-gray-500 pt-2")}>
-                    Less waiting, less buffering, and more surfing and streaming
-                  </li>
-                  <div className={cn("pt-4")}>
-                    <button
-                      className={cn("bg-blue-700 text-white p-2 rounded")}
-                    >
-                      Customize order
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ExtendSuperFasritem
+          title="Extend your super-fast internet to reach every corner of your
+       home."
+          description="Whole-Home Wifi, Powered by NetFx, eliminates dead and gives
+       you the coverage you need with the best home Wifi solution
+       around."
+          price="$69.99"
+          mo="/mo"
+          tag="Great for several devices being used similtaneously"
+          taga="Perfect for households with 1-3 users."
+          tagb="Less waiting, less buffering, and more surfing and streaming"
+        />
       </section>
 
       <section>
