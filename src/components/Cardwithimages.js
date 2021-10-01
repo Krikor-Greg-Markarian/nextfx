@@ -34,7 +34,7 @@ const Card = (props) => {
         </div>
       </div>
       {props.select.map((item, idx) => (
-        <Item text={item.text} />
+        <Item text={item.text} key={idx} />
       ))}
       <div className={cn("flex justify-center items-center pt-4")}>
         <Button
