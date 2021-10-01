@@ -6,6 +6,8 @@ import { FaCheck } from "react-icons/fa";
 import NavbarBlogs from "../src/components/NavbarWifi";
 import ResumeCard from "../src/components/ResumeCard";
 import CUrrentJobItem from "../src/components/CUrrentJobItem";
+import Button from "../src/components/Button";
+import Supportitem from "../src/components/Supportitem";
 
 const Item = (props) => {
   return (
@@ -76,11 +78,17 @@ export default function Home(props) {
         />
       </section>
 
-      <section className={cn("pt-10 pb-10")}>
-        <Item
+      <section className={cn("pt-10 pb-10 ")}>
+        {/* <Item
           text="we're here to support you."
           subtitle="We've streamlined our plans to give you the fastest internet available at your address for one low monthly price."
-          button="our supprt center"
+          button="our support center"
+        ></Item> */}
+        <Supportitem 
+          title = "We're here to support you."
+          description = "We've streamlined our plans to give you the fastest internet available at your address for one low monthly price."
+          
+
         />
       </section>
 
