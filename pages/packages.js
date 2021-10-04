@@ -20,60 +20,17 @@ export default function Home(props) {
       <section>
         <div className={cn("container mx-auto p-12")}>
           <div className={cn("grid grid-cols-2 gap-4")}>
-            <div className={cn("col-span-1")}>
-              <BlogClassicitem
-                date="May 11,2020 / By"
-                name="Emma Waston"
-                title=" What is the future of enterprise internet ?"
-                description="Given the rate in which technology evolves and, and given thta the next wave of infrastructure revolution is upon us with 5G, it's useful to know the direction that enterprise internet will be heading, particularly thta these trends[...]"
-                tag="Read More"
-              />
-            </div>
-            <div className={cn("col-span-1")}>
-              <BlogClassicitem
-                date="May 11,2020 / By"
-                name="Emma Waston"
-                title="Is Your Business Ready For Business Process Automation ?"
-                description="Given the rate in which technology evolves and, and given thta the next wave of infrastructure revolution is upon us with 5G, it's useful to know the direction that enterprise internet will be heading, particularly thta these trends[...]"
-                tag="Read More"
-              />
-            </div>
-            <div className={cn("col-span-1")}>
-              <BlogClassicitem
-                date="May 11,2020 / By"
-                name="Emma Waston"
-                title="Six Tips To Make Your Mobile Phone Your Primary Work Device"
-                description="Given the rate in which technology evolves and, and given thta the next wave of infrastructure revolution is upon us with 5G, it's useful to know the direction that enterprise internet will be heading, particularly thta these trends[...]"
-                tag="Read More"
-              />
-            </div>
-            <div className={cn("col-span-1")}>
-              <BlogClassicitem
-                date="May 11,2020 / By"
-                name="Emma Waston"
-                title="Tech Tips: protecting your network"
-                description="Given the rate in which technology evolves and, and given thta the next wave of infrastructure revolution is upon us with 5G, it's useful to know the direction that enterprise internet will be heading, particularly thta these trends[...]"
-                tag="Read More"
-              />
-            </div>
-            <div className={cn("col-span-1")}>
-              <BlogClassicitem
-                date="May 11,2020 / By"
-                name="Emma Waston"
-                title="Wearables and More: 5 Tech Trends for Pet Parents"
-                description="Given the rate in which technology evolves and, and given thta the next wave of infrastructure revolution is upon us with 5G, it's useful to know the direction that enterprise internet will be heading, particularly thta these trends[...]"
-                tag="Read More"
-              />
-            </div>
-            <div className={cn("col-span-1")}>
-              <BlogClassicitem
-                date="May 11,2020 / By"
-                name="Emma Waston"
-                title="How To Choose The ideal Enterprise internet provider"
-                description="Given the rate in which technology evolves and, and given thta the next wave of infrastructure revolution is upon us with 5G, it's useful to know the direction that enterprise internet will be heading, particularly thta these trends[...]"
-                tag="Read More"
-              />
-            </div>
+            {props.blogClassic.map((item, idx) => (
+              <div className={cn("col-span-1")}>
+                <BlogClassicitem
+                  date={item.date}
+                  name={item.name}
+                  title={item.title}
+                  description={item.description}
+                  tag={item.tag}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -90,6 +47,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       posts_data: response.data,
+      blogClassic: response.data.blogClassic,
     }, // will be passed to the page component as props
   };
 }
