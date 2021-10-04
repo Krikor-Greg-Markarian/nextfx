@@ -11,7 +11,7 @@ function ClientReview(props) {
       </p>
       <div className="flex">
         <div className="flex-shrink">
-          <div className={cn("small rounded-full")}></div>
+          <img src={props.imageUrl} className={cn("w-12 h-12 rounded-full")} alt="" />
         </div>
         <div className="flex-shrink pl-2">
           <p className={cn("font-bold text-sm mb-0")}>{props.name}</p>

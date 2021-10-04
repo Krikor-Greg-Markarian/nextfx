@@ -22,7 +22,7 @@ function BestValueitem(props) {
         <p className={cn("font-bold text-2xl text-blue-800 inline")}>
           {props.price}
         </p>
-        <sub className={cn("inline")}>/mo</sub>
+        <sub className={cn("inline")}>{props.mo}</sub>
       </div>
       {props.text.map((item, idx) => (
         <Item text={item.text} key={idx} />
@@ -36,7 +36,7 @@ function BestValueitem(props) {
         />
       </div>
       <p className={cn("text-sm text-blue-800 text-center underline")}>
-        or call1(900) 232 123
+        {props.info}
       </p>
 
       {props.isMostPopular ? (

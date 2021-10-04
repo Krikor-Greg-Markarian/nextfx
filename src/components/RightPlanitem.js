@@ -29,7 +29,7 @@ function RightPlanitem(props) {
           </sub>{" "}
         </p>
 
-        {props.item.map((item, idx) => (
+        {props.listItems.map((item, idx) => (
           <Item text={item.text} key={idx} />
         ))}
         <div className={cn("pt-3 flex justify-center items-center")}>
@@ -39,7 +39,7 @@ function RightPlanitem(props) {
               styleClasses.buttonBackgroundColor,
               styleClasses.buttonTextColor
             )}
-            text={props.text}
+            text={props.buttonText}
           />
         </div>
       </div>
