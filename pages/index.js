@@ -17,33 +17,6 @@ import Experienceitem from "../src/components/Experienceitem";
 import BestValueitem from "../src/components/BestValueitem";
 import Item from "../src/components/Item";
 
-const netFx = [
-  {
-    title: "Wifi internet",
-    description: "High-Speed internet access that is always on & fast.",
-    imageUrl:
-      "https://cdn.pixabay.com/photo/2017/03/28/22/55/night-photograph-2183637__340.jpg",
-  },
-  {
-    title: "Mobile connection",
-    description: "Use our router to stay online on all your devices.",
-    imageUrl:
-      "https://cdn.pixabay.com/photo/2021/09/17/15/17/fruit-6633086__340.jpg",
-  },
-  {
-    title: "TV box",
-    description: "200+ entertainment channels for different age groups.",
-    imageUrl:
-      "https://cdn.pixabay.com/photo/2021/09/20/06/55/spaghetti-6639970__340.jpg",
-  },
-  {
-    title: "Smart home",
-    description: "NetFx provides extra loT for all your devices.",
-    imageUrl:
-      "https://cdn.pixabay.com/photo/2020/12/29/23/08/horses-5871847__340.jpg",
-  },
-];
-
 const favorite = [
   {
     title:
@@ -177,13 +150,14 @@ export default function Home(props) {
               </div>
             </div>
             <div className={cn("md:grid grid-cols-4 gap-4 pt-2")}>
-              {netFx.map((item, idx) => (
+              {props.experienceThe.map((item, idx) => (
                 <div className={cn("col-span-1")}>
                   <Experienceitem
                     key={idx}
                     title={item.title}
                     description={item.description}
                     imageUrl={item.imageUrl}
+                    experienceThe={item.experienceThe}
                   />
                 </div>
               ))}
@@ -261,64 +235,26 @@ export default function Home(props) {
               Get the best deals on TV,internet &amp; Home Phone for New York
               City, NY.
             </p>
+
             <div
               className={cn(
                 "grid sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-4 gap-2 pb-12"
               )}
             >
-              <div className={cn("sm:pb-2 col-span-1")}>
-                <BestValueitem
-                  buttonText={"asddsds"}
-                  title={"STANDARD"}
-                  price={"$49.99"}
-                  isMostPopular={false}
-                  text={[
-                    { text: "Free Google Voice Remote and DVR included" },
-                    { text: "60+ HD Channels" },
-                    { text: "Local Channels" },
-                    { text: "190 Channel" },
-                  ]}
-                />
-              </div>
-              <div className={cn("sm:pb-2 col-span-1")}>
-                <BestValueitem
-                  title={"SILVER"}
-                  price={"$74.99"}
-                  isMostPopular={false}
-                  text={[
-                    { text: "Free Google Voice Remote and DVR included" },
-                    { text: "110+ HD Channels" },
-                    { text: "Local Channels" },
-                    { text: "190+ Channel" },
-                  ]}
-                />
-              </div>
-              <div className={cn("sm:pb-2 col-span-1")}>
-                <BestValueitem
-                  title={"GOLD"}
-                  price={"$84.99"}
-                  isMostPopular={true}
-                  text={[
-                    { text: "Free Google Voice Remote and DVR included" },
-                    { text: "125+ HD Channels" },
-                    { text: "Local Channels" },
-                    { text: "240+ Channel" },
-                  ]}
-                />
-              </div>
-              <div className={cn("sm:pb-2 col-span-1")}>
-                <BestValueitem
-                  title={"DIAMON"}
-                  price={"$94.99"}
-                  isMostPopular={false}
-                  text={[
-                    { text: "Free Google Voice Remote and DVR included" },
-                    { text: "140+ HD Channels" },
-                    { text: "Local Channels" },
-                    { text: "290+ Channel" },
-                  ]}
-                />
-              </div>
+              {props.networkPackages.map((item, idx) => (
+                <div className={cn("col-span-1")}>
+                  <BestValueitem
+                    key={idx}
+                    title={item.smallTitle}
+                    price={item.price}
+                    mo={item.mo}
+                    text={item.text}
+                    isMostPopular={item.isMostPopular}
+                    buttonText={item.buttonText}
+                    info={item.info}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -335,6 +271,7 @@ export default function Home(props) {
                   description="Amazing customer service both over the phone and in person. The technician was dedicated to a thorough installation. NetFx rocks! internet speed delivery was exactly as promised, you guys are #1"
                   name="Alex Rovia"
                   location="Los Angeles,California"
+                  imageUrl="https://cdn.pixabay.com/photo/2021/09/26/09/54/beans-6656979__340.jpg"
                 />
               </div>
               <div className={cn("col-span-1 relative")}>
@@ -375,6 +312,8 @@ export async function getServerSideProps(context) {
   return {
     props: {
       posts_data: response.data,
+      experienceThe: response.data.experienceThe,
+      networkPackages: response.data.networkPackages,
     }, // will be passed to the page component as props
   };
 }
