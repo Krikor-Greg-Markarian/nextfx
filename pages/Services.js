@@ -43,54 +43,20 @@ export default function Home(props) {
               "grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
             )}
           >
-            <div className={cn("col-span-1")}>
-              <BestValueitem
-                title={"STANDARD"}
-                price={"$49.99"}
-                text={[
-                  { text: "Free Google Voice Remote and DVR included" },
-                  { text: "60+ HD Channels" },
-                  { text: "Local Channels" },
-                  { text: "190 Channel" },
-                ]}
-              />
-            </div>
-            <div className={cn("col-span-1")}>
-              <BestValueitem
-                title={"SILVER"}
-                price={"$74.99"}
-                text={[
-                  { text: "Free Google Voice Remote and DVR included" },
-                  { text: "110+ HD Channels" },
-                  { text: "Local Channels" },
-                  { text: "190+ Channel" },
-                ]}
-              />
-            </div>
-            <div className={cn("col-span-1")}>
-              <BestValueitem
-                title={"GOLD"}
-                price={"$84.99"}
-                text={[
-                  { text: "Free Google Voice Remote and DVR included" },
-                  { text: "125+ HD Channels" },
-                  { text: "Local Channels" },
-                  { text: "240+ Channel" },
-                ]}
-              />
-            </div>
-            <div className={cn("col-span-1")}>
-              <BestValueitem
-                title={"DIAMOND"}
-                price={"$94.99"}
-                text={[
-                  { text: "Free Google Voice Remote and DVR included" },
-                  { text: "140+ HD Channels" },
-                  { text: "Local Channels" },
-                  { text: "290+ Channel" },
-                ]}
-              />
-            </div>
+            {props.networkPackages.map((item, idx) => (
+              <div className={cn("col-span-1")}>
+                <BestValueitem
+                  key={idx}
+                  title={item.smallTitle}
+                  price={item.price}
+                  mo={item.mo}
+                  text={item.text}
+                  isMostPopular={item.isMostPopular}
+                  buttonText={item.buttonText}
+                  info={item.info}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -109,34 +75,17 @@ export default function Home(props) {
           </p>
           <div className={cn("container mx-auto")}>
             <div className={cn("md:grid grid-cols-4 gap-4")}>
-              <div className={cn("col-span-1 sm:pt-4")}>
-                <SolutionItam
-                  title="Network &amp; Connectivity"
-                  description="Solutions to optimize performance and deliver the bandwidth and reliablility needed to support IT transformation."
-                  tag="Lear more"
-                />
-              </div>
-              <div className={cn("col-span-1 sm:pt-4")}>
-                <SolutionItam
-                  title="UC &amp; Voice"
-                  description="Unified communications and colaboration solutions to engage customers, empower your people and deliver a different CX"
-                  tag="Lear more"
-                />
-              </div>
-              <div className={cn("col-span-1 sm:pt-4")}>
-                <SolutionItam
-                  title="Security &amp; Compliance"
-                  description="Fully managed enterprise security solutions to protect your data, sutomers and business reputation from costly digital threats and attacks."
-                  tag="Lear more"
-                />
-              </div>
-              <div className={cn("col-span-1 sm:pt-4")}>
-                <SolutionItam
-                  title="Professional Services"
-                  description="Experts to argument your staff, freeing your team to focus on strategic innovation and growth."
-                  tag="Lear more"
-                />
-              </div>
+              {props.ourservice.map((item, idx) => (
+                <div className={cn("col-span-1 sm:pt-4")}>
+                  <SolutionItam
+                    key={idx}
+                    imageUrl={item.imageUrl}
+                    title={item.title}
+                    description={item.description}
+                    learnMore={item.learnMore}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -279,61 +228,24 @@ export default function Home(props) {
         </div>
         <div className={cn("container mx-auto pt-3")}>
           <div className={cn("grid md:grid-cols-3 gap-4")}>
-            <div className={cn("col-span-1")}>
-              <RightPlanitem
-                smalltitle="Personal"
-                title="Good Value"
-                price="$39.99"
-                month="/month"
-                text="Order now"
-                titleColor="text-white"
-                priceColor="text-white"
-                planBackgroundColor="bg-blue-800"
-                buttonBackgroundColor="bg-white"
-                buttonTextColor="text-black"
-                item={[
-                  { text: "250 Mbps" },
-                  { text: "400Gb included data" },
-                  {
-                    text: "premium productivity features and simple, secure file sharing",
-                  },
-                ]}
-              />
-            </div>
-            <div className={cn("col-span-1")}>
-              <RightPlanitem
-                smalltitle="Small family"
-                title="Most Popular"
-                price="$49.99"
-                month="/month"
-                text="Purchase now"
-                item={[
-                  { text: "500 Mbps" },
-                  { text: "500 GB included data" },
-                  {
-                    text: "premium productivity features and simple, secure file sharing",
-                  },
-                ]}
-              />
-            </div>
-            <div className={cn("col-span-1")}>
-              <RightPlanitem
-                smalltitle="Business"
-                title="Top Speed"
-                price="$59.99"
-                month="/month"
-                text="Purchase now"
-                buttonBackgroundColor="bg-blue-700"
-                buttonTextColor="text-white"
-                item={[
-                  { text: "940 Mbps" },
-                  { text: "Unlimited included data" },
-                  {
-                    text: "premium productivity features and simple, secure file sharing",
-                  },
-                ]}
-              />
-            </div>
+            {props.internetPlans.map((item, idx) => (
+              <div className={cn("col-span-1")}>
+                <RightPlanitem
+                  key={idx}
+                  smalltitle={item.smalltitle}
+                  title={item.title}
+                  price={item.price}
+                  month={item.month}
+                  listItems={item.listItems}
+                  titleColor={item.titleColor}
+                  priceColor={item.priceColor}
+                  planBackgroundColor={item.planBackgroundColor}
+                  buttonBackgroundColor={item.buttonBackgroundColor}
+                  buttonTextColor={item.buttonTextColor}
+                  buttonText={item.buttonText}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -471,11 +383,14 @@ export default function Home(props) {
 }
 
 export async function getServerSideProps(context) {
-  const response = await axios.get("http://localhost:3000/api/posts");
+  const response = await axios.get("http://localhost:3000/api/posts3");
 
   return {
     props: {
       posts_data: response.data,
+      networkPackages: response.data.networkPackages,
+      ourservice: response.data.ourservice,
+      internetPlans: response.data.internetPlans,
     }, // will be passed to the page component as props
   };
 }
